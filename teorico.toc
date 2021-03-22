@@ -1,0 +1,52 @@
+\contentsline {chapter}{\numberline {1}Números Reales}{2}{}%
+\contentsline {section}{\numberline {1.1}Introducción}{2}{}%
+\contentsline {section}{\numberline {1.2}Números Reales}{3}{}%
+\contentsline {subsection}{\numberline {1.2.1}Operaciones-Propiedades}{3}{}%
+\contentsline {subsubsection}{\textit {Axiomas de la operación suma (+):}}{3}{}%
+\contentsline {subsubsection}{\textit {Axiomas de la operación multiplicación ($\cdot $):}}{4}{}%
+\contentsline {subsubsection}{\textit {Axiomas de ambas operaciones:}}{4}{}%
+\contentsline {subsection}{\numberline {1.2.2}Relaciones de Orden}{4}{}%
+\contentsline {subsubsection}{\textit {Axiomas de orden:}}{4}{}%
+\contentsline {section}{\numberline {1.3}Desigualdades}{6}{}%
+\contentsline {subsection}{\numberline {1.3.1}Propiedades de las Desigualdades}{6}{}%
+\contentsline {section}{\numberline {1.4}La Recta Real. Sistemas de Coordenadas}{7}{}%
+\contentsline {subsection}{\numberline {1.4.1}Sistemas de Coordenadas en el plano}{7}{}%
+\contentsline {subsubsection}{Punto en el Plano}{8}{}%
+\contentsline {subsection}{\numberline {1.4.2}Sistema de Coordenadas en el espacio}{8}{}%
+\contentsline {subsubsection}{Generalizando:}{9}{}%
+\contentsline {subsection}{\numberline {1.4.3}Valor Absoluto y Distancia}{10}{}%
+\contentsline {subsubsection}{Propiedades}{10}{}%
+\contentsline {subsubsection}{Propiedades}{11}{}%
+\contentsline {subsection}{\numberline {1.4.4}Intervalos}{11}{}%
+\contentsline {subsection}{\numberline {1.4.5}Entornos}{13}{}%
+\contentsline {section}{\numberline {1.5}Ejercicios Resueltos}{14}{}%
+\contentsline {chapter}{\numberline {2}Sistemas de Ec. Lineales y Matrices}{26}{}%
+\contentsline {section}{\numberline {2.1}Introducción}{26}{}%
+\contentsline {section}{\numberline {2.2}Ecuaciones Lineales}{27}{}%
+\contentsline {section}{\numberline {2.3}Sistemas de Ecuaciones Lineales}{28}{}%
+\contentsline {section}{\numberline {2.4}Matrices}{29}{}%
+\contentsline {subsection}{\numberline {2.4.1}Notaciones}{29}{}%
+\contentsline {subsection}{\numberline {2.4.2}Tipos de Matrices}{30}{}%
+\contentsline {subsubsection}{\underline {Matriz Nula}}{30}{}%
+\contentsline {subsubsection}{\underline {Matriz Cuadrada}}{30}{}%
+\contentsline {subsubsection}{\underline {Matriz Identidad}}{30}{}%
+\contentsline {subsubsection}{\underline {Matrices Iguales}}{30}{}%
+\contentsline {subsection}{\numberline {2.4.3}Operaciones Elementales de Filas}{31}{}%
+\contentsline {subsubsection}{\underline {Operaci\'on elemental de fila tipo I}}{31}{}%
+\contentsline {subsubsection}{\underline {Operaci\'on elemental de fila tipo II}}{31}{}%
+\contentsline {subsubsection}{\underline {Operaci\'on elemental de fila tipo III}}{31}{}%
+\contentsline {subsection}{\numberline {2.4.4}Propiedades}{32}{}%
+\contentsline {subsubsection}{Matrices Equivalentes por Filas}{32}{}%
+\contentsline {subsubsection}{Propiedades}{33}{}%
+\contentsline {subsection}{\numberline {2.4.5}Matriz Escalón Reducida por Filas}{34}{}%
+\contentsline {subsubsection}{REDUCCIÓN DE MATRICES}{37}{}%
+\contentsline {subsection}{\numberline {2.4.6}Rango de una Matriz}{41}{}%
+\contentsline {subsection}{\numberline {2.4.7}Conjunto de Soluciones de un Sistema de Ecuaciones\\ Lineales}{41}{}%
+\contentsline {subsection}{\numberline {2.4.8}Teorema de Rouché-Frobenius}{45}{}%
+\contentsline {subsection}{\numberline {2.4.9}Operaciones con Matrices}{45}{}%
+\contentsline {subsubsection}{Suma de Matrices}{45}{}%
+\contentsline {subsubsection}{Producto de un Escalar por una Matriz}{46}{}%
+\contentsline {subsection}{\numberline {2.4.10}Combinación Lineal de Matrices}{47}{}%
+\contentsline {subsection}{\numberline {2.4.11}Multiplicación de Matrices}{47}{}%
+\contentsline {subsubsection}{Propiedades}{49}{}%
+\contentsline {chapter}{\numberline {3}Bibliografía}{50}{}%

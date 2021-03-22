@@ -1,0 +1,1766 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.8)  10 MAR 2021 22:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**teorico.tex
+(./teorico.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-03> xparse <2020-03-03>
+(/usr/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+
+(/usr/share/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip49
+\RaggedLeftLeftskip=\skip50
+\RaggedRightLeftskip=\skip51
+\CenteringRightskip=\skip52
+\RaggedLeftRightskip=\skip53
+\RaggedRightRightskip=\skip54
+\CenteringParfillskip=\skip55
+\RaggedLeftParfillskip=\skip56
+\RaggedRightParfillskip=\skip57
+\JustifyingParfillskip=\skip58
+\CenteringParindent=\skip59
+\RaggedLeftParindent=\skip60
+\RaggedRightParindent=\skip61
+\JustifyingParindent=\skip62
+)
+(/usr/share/texmf-dist/tex/latex/blkarray/blkarray.sty
+Package: blkarray 2015/02/27 v0.07 Block array (dpc)
+\c@BAenumi=\count186
+\BA@col=\count187
+\BA@block@cnt=\count188
+\BA@final@box=\box47
+\BA@first@box=\box48
+\BA@colsep=\dimen139
+\BA@ftn=\toks17
+\BAextrarowheight=\dimen140
+\BAextraheightafterhline=\dimen141
+\BAarrayrulewidth=\dimen142
+\BAdoublerulesep=\dimen143
+\BAfootskip=\dimen144
+\BA@dashbox=\box49
+\BA@ddashbox=\box50
+)
+(/usr/share/texmf-dist/tex/latex/answers/answers.sty
+Package: answers 2014/08/24 v2.16 Production of solution sheets in LaTeX2e
+
+(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks18
+\verbatim@line=\toks19
+\verbatim@in@stream=\read2
+))
+(/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+)
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen147
+\enit@toks=\toks21
+\enit@inbox=\box51
+\enit@count@id=\count189
+\enitdp@description=\count190
+)
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count191
+\mult@box=\box52
+\multicol@leftmargin=\dimen148
+\c@unbalance=\count192
+\c@collectmore=\count193
+\doublecol@number=\count194
+\multicoltolerance=\count195
+\multicolpretolerance=\count196
+\full@width=\dimen149
+\page@free=\dimen150
+\premulticols=\dimen151
+\postmulticols=\dimen152
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
+\partial@page=\box53
+\last@line=\box54
+\maxbalancingoverflow=\dimen153
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@gfirstbox=\box57
+\mult@firstbox=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\c@minrows=\count197
+\c@columnbadness=\count198
+\c@finalcolumnbadness=\count199
+\last@try=\dimen154
+\multicolovershoot=\dimen155
+\multicolundershoot=\dimen156
+\mult@nat@firstbox=\box96
+\colbreak@box=\box97
+\mc@col@check@num=\count266
+)
+(/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count267
+\Gm@cntv=\count268
+\c@Gm@tempcnt=\count269
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
+\Gm@dimlist=\toks22
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip66
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen165
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen166
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box98
+\strutbox@=\box99
+\big@size=\dimen167
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count275
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip16
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
+\tag@help=\toks24
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
+\andhelp@=\toks25
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks26
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip69
+\thm@postskip=\skip70
+\thm@headsep=\skip71
+\dth@everypar=\toks33
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-12-03 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count282
+\l__pdf_internal_box=\box100
+))
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count283
+)
+(/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+(/usr/share/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\c@abspage=\count284
+Package zref Info: New property: abspage on input line 66.
+)
+(/usr/share/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+\mdf@templength=\skip72
+\c@mdf@globalstyle@cnt=\count285
+\mdf@skipabove@length=\skip73
+\mdf@skipbelow@length=\skip74
+\mdf@leftmargin@length=\skip75
+\mdf@rightmargin@length=\skip76
+\mdf@innerleftmargin@length=\skip77
+\mdf@innerrightmargin@length=\skip78
+\mdf@innertopmargin@length=\skip79
+\mdf@innerbottommargin@length=\skip80
+\mdf@splittopskip@length=\skip81
+\mdf@splitbottomskip@length=\skip82
+\mdf@outermargin@length=\skip83
+\mdf@innermargin@length=\skip84
+\mdf@linewidth@length=\skip85
+\mdf@innerlinewidth@length=\skip86
+\mdf@middlelinewidth@length=\skip87
+\mdf@outerlinewidth@length=\skip88
+\mdf@roundcorner@length=\skip89
+\mdf@footenotedistance@length=\skip90
+\mdf@userdefinedwidth@length=\skip91
+\mdf@needspace@length=\skip92
+\mdf@frametitleaboveskip@length=\skip93
+\mdf@frametitlebelowskip@length=\skip94
+\mdf@frametitlerulewidth@length=\skip95
+\mdf@frametitleleftmargin@length=\skip96
+\mdf@frametitlerightmargin@length=\skip97
+\mdf@shadowsize@length=\skip98
+\mdf@extratopheight@length=\skip99
+\mdf@subtitleabovelinewidth@length=\skip100
+\mdf@subtitlebelowlinewidth@length=\skip101
+\mdf@subtitleaboveskip@length=\skip102
+\mdf@subtitlebelowskip@length=\skip103
+\mdf@subtitleinneraboveskip@length=\skip104
+\mdf@subtitleinnerbelowskip@length=\skip105
+\mdf@subsubtitleabovelinewidth@length=\skip106
+\mdf@subsubtitlebelowlinewidth@length=\skip107
+\mdf@subsubtitleaboveskip@length=\skip108
+\mdf@subsubtitlebelowskip@length=\skip109
+\mdf@subsubtitleinneraboveskip@length=\skip110
+\mdf@subsubtitleinnerbelowskip@length=\skip111
+
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box101
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/01 v3.1.7a (3.1.7a)
+))
+Package: pgf 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count290
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/01 v3.1.7a (3.1.7a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count293
+\pgfmath@box=\box102
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count294
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfpic=\box103
+\pgf@hbox=\box104
+\pgf@layerbox@main=\box105
+\pgf@picture@serial@count=\count295
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgflinewidth=\dimen261
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfarrowsep=\dimen265
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfexternal@startupbox=\box106
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfnodeparttextbox=\box107
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/01 v3.1.7a (3.1.7a)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen269
+\pgffor@skip=\dimen270
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@plot@mark@count=\count298
+\pgfplotmarksize=\dimen271
+)
+\tikz@lastx=\dimen272
+\tikz@lasty=\dimen273
+\tikz@lastxsaved=\dimen274
+\tikz@lastysaved=\dimen275
+\tikz@lastmovetox=\dimen276
+\tikz@lastmovetoy=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
+\tikz@figbox=\box108
+\tikz@figbox@bg=\box109
+\tikz@tempbox=\box110
+\tikz@tempbox@bg=\box111
+\tikztreelevel=\count299
+\tikznumberofchildren=\count300
+\tikznumberofcurrentchild=\count301
+\tikz@fig@count=\count302
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfmatrixcurrentrow=\count303
+\pgfmatrixcurrentcolumn=\count304
+\pgf@matrix@numberofcolumns=\count305
+)
+\tikz@expandcount=\count306
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))) (/usr/share/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box112
+\mdf@footnotebox=\box113
+\mdf@splitbox@one=\box114
+\mdf@splitbox@two=\box115
+\mdf@splitbox@save=\box116
+\mdfsplitboxwidth=\skip112
+\mdfsplitboxtotalwidth=\skip113
+\mdfsplitboxheight=\skip114
+\mdfsplitboxdepth=\skip115
+\mdfsplitboxtotalheight=\skip116
+\mdfframetitleboxwidth=\skip117
+\mdfframetitleboxtotalwidth=\skip118
+\mdfframetitleboxheight=\skip119
+\mdfframetitleboxdepth=\skip120
+\mdfframetitleboxtotalheight=\skip121
+\mdffootnoteboxwidth=\skip122
+\mdffootnoteboxtotalwidth=\skip123
+\mdffootnoteboxheight=\skip124
+\mdffootnoteboxdepth=\skip125
+\mdffootnoteboxtotalheight=\skip126
+\mdftotallinewidth=\skip127
+\mdfboundingboxwidth=\skip128
+\mdfboundingboxtotalwidth=\skip129
+\mdfboundingboxheight=\skip130
+\mdfboundingboxdepth=\skip131
+\mdfboundingboxtotalheight=\skip132
+\mdf@freevspace@length=\skip133
+\mdf@horizontalwidthofbox@length=\skip134
+\mdf@verticalmarginwhole@length=\skip135
+\mdf@horizontalspaceofbox=\skip136
+\mdfsubtitleheight=\skip137
+\mdfsubsubtitleheight=\skip138
+\c@mdfcountframes=\count307
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count308
+\c@mdf@env@i=\count309
+\c@mdf@env@ii=\count310
+\c@mdf@zref@counter=\count311
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip139
+\f@nch@O@elh=\skip140
+\f@nch@O@erh=\skip141
+\f@nch@O@olh=\skip142
+\f@nch@O@orh=\skip143
+\f@nch@O@elf=\skip144
+\f@nch@O@erf=\skip145
+\f@nch@O@olf=\skip146
+\f@nch@O@orf=\skip147
+)
+(/usr/share/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks46
+\AP@partial=\box117
+\AP@footins=\box118
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+shadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+fadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(./teorico.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 44.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count312
+\scratchdimen=\dimen280
+\scratchbox=\box119
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen281
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks48
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<unc.jpg, id=29, 399.6531pt x 126.9543pt>
+File: unc.jpg Graphic file (type jpg)
+<use unc.jpg>
+Package pdftex.def Info: unc.jpg  used on input line 48.
+(pdftex.def)             Requested size: 226.48395pt x 71.94626pt.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./unc.jpg>]
+(./teorico.toc
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
+
+ (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write4
+ [1
+
+]
+Unidad 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+<conjunto-de-numeros.jpg, id=41, 304.88907pt x 145.29282pt>
+File: conjunto-de-numeros.jpg Graphic file (type jpg)
+<use conjunto-de-numeros.jpg>
+Package pdftex.def Info: conjunto-de-numeros.jpg  used on input line 105.
+(pdftex.def)             Requested size: 317.07614pt x 151.10538pt.
+[2
+
+ <./conjunto-de-numeros.jpg>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 109.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--124
+
+ []
+
+Package mdframed Info: Not enough space on this page on input line 125.
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 137.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--142
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 15.71667pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[3]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 169.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+[4]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 209.
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+<recta.jpg, id=66, 475.46053pt x 144.54pt>
+File: recta.jpg Graphic file (type jpg)
+<use recta.jpg>
+Package pdftex.def Info: recta.jpg  used on input line 278.
+(pdftex.def)             Requested size: 271.7835pt x 82.62463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+<sistema-de-coordenadas.png, id=67, 513.92pt x 383.4325pt>
+File: sistema-de-coordenadas.png Graphic file (type png)
+<use sistema-de-coordenadas.png>
+Package pdftex.def Info: sistema-de-coordenadas.png  used on input line 290.
+(pdftex.def)             Requested size: 226.48395pt x 168.97995pt.
+[7 <./recta.jpg> <./sistema-de-coordenadas.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
+
+ []
+
+<punto-en-plano.png, id=71, 257.96375pt x 183.68625pt>
+File: punto-en-plano.png Graphic file (type png)
+<use punto-en-plano.png>
+Package pdftex.def Info: punto-en-plano.png  used on input line 309.
+(pdftex.def)             Requested size: 226.48395pt x 161.2744pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
+
+ []
+
+<punto-en-espacio.png, id=73, 238.8925pt x 249.93375pt>
+File: punto-en-espacio.png Graphic file (type png)
+<use punto-en-espacio.png>
+Package pdftex.def Info: punto-en-espacio.png  used on input line 323.
+(pdftex.def)             Requested size: 135.89174pt x 142.17006pt.
+[8 <./punto-en-plano.png> <./punto-en-espacio.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+<punto-espacio-gral.jpg, id=79, 257.96375pt x 196.735pt>
+File: punto-espacio-gral.jpg Graphic file (type jpg)
+<use punto-espacio-gral.jpg>
+Package pdftex.def Info: punto-espacio-gral.jpg  used on input line 340.
+(pdftex.def)             Requested size: 271.7835pt x 207.29228pt.
+[9 <./punto-espacio-gral.jpg>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 348.
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+
+ []
+
+[10]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 399.
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--402
+
+ []
+
+Package mdframed Info: Not enough space on this page on input line 405.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 419.
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--425
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--425
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--439
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--439
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--488
+
+ []
+
+<intervalos.png, id=90, 730.73pt x 411.5375pt>
+File: intervalos.png Graphic file (type png)
+<use intervalos.png>
+Package pdftex.def Info: intervalos.png  used on input line 490.
+(pdftex.def)             Requested size: 452.9679pt x 255.10666pt.
+[12 <./intervalos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+<int-a.png, id=96, 321.2pt x 38.1425pt>
+File: int-a.png Graphic file (type png)
+<use int-a.png>
+Package pdftex.def Info: int-a.png  used on input line 509.
+(pdftex.def)             Requested size: 226.48395pt x 26.89569pt.
+<int-b.png, id=97, 324.21124pt x 45.16875pt>
+File: int-b.png Graphic file (type png)
+<use int-b.png>
+Package pdftex.def Info: int-b.png  used on input line 515.
+(pdftex.def)             Requested size: 226.48395pt x 31.55379pt.
+<int-c.png, id=98, 324.21124pt x 42.1575pt>
+File: int-c.png Graphic file (type png)
+<use int-c.png>
+Package pdftex.def Info: int-c.png  used on input line 521.
+(pdftex.def)             Requested size: 226.48395pt x 29.45021pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
+
+ []
+
+<ent-sim.png, id=99, 399.4925pt x 111.41624pt>
+File: ent-sim.png Graphic file (type png)
+<use ent-sim.png>
+Package pdftex.def Info: ent-sim.png  used on input line 534.
+(pdftex.def)             Requested size: 181.18439pt x 50.53125pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
+
+ []
+
+<ent-red.png, id=100, 379.4175pt x 102.3825pt>
+File: ent-red.png Graphic file (type png)
+<use ent-red.png>
+Package pdftex.def Info: ent-red.png  used on input line 543.
+(pdftex.def)             Requested size: 181.18439pt x 48.89151pt.
+[13 <./int-a.png> <./int-b.png> <./int-c.png> <./ent-sim.png> <./ent-red.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
+
+ []
+
+<ej2-A.png, id=109, 647.41875pt x 116.435pt>
+File: ej2-A.png Graphic file (type png)
+<use ej2-A.png>
+Package pdftex.def Info: ej2-A.png  used on input line 612.
+(pdftex.def)             Requested size: 271.7835pt x 48.87926pt.
+<ej2-B.png, id=110, 648.4225pt x 117.43875pt>
+File: ej2-B.png Graphic file (type png)
+<use ej2-B.png>
+Package pdftex.def Info: ej2-B.png  used on input line 615.
+(pdftex.def)             Requested size: 271.7835pt x 49.22357pt.
+<ej2-C.png, id=111, 647.41875pt x 112.42pt>
+File: ej2-C.png Graphic file (type png)
+<use ej2-C.png>
+Package pdftex.def Info: ej2-C.png  used on input line 618.
+(pdftex.def)             Requested size: 271.7835pt x 47.19377pt.
+[14 <./ej2-A.png> <./ej2-B.png> <./ej2-C.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 622--625
+
+ []
+
+<ej2-a.png, id=118, 649.42625pt x 115.43124pt>
+File: ej2-a.png Graphic file (type png)
+<use ej2-a.png>
+Package pdftex.def Info: ej2-a.png  used on input line 627.
+(pdftex.def)             Requested size: 271.7835pt x 48.30817pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--633
+
+ []
+
+<ej2-b.png, id=119, 644.4075pt x 110.4125pt>
+File: ej2-b.png Graphic file (type png)
+<use ej2-b.png>
+Package pdftex.def Info: ej2-b.png  used on input line 635.
+(pdftex.def)             Requested size: 271.7835pt x 46.56836pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--641
+
+ []
+
+<ej2-c.png, id=120, 645.41125pt x 115.43124pt>
+File: ej2-c.png Graphic file (type png)
+<use ej2-c.png>
+Package pdftex.def Info: ej2-c.png  used on input line 643.
+(pdftex.def)             Requested size: 271.7835pt x 48.6076pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--649
+
+ []
+
+<ej2-d.png, id=121, 649.42625pt x 115.43124pt>
+File: ej2-d.png Graphic file (type png)
+<use ej2-d.png>
+Package pdftex.def Info: ej2-d.png  used on input line 651.
+(pdftex.def)             Requested size: 271.7835pt x 48.30817pt.
+
+Overfull \hbox (3.21715pt too wide) in paragraph at lines 654--655
+[]$[]$ \OT1/cmr/m/n/12 Ex-pre-sar el in-ter-valo en t^^Serminos de de-sigual-da
+des y, a con-tin-uaci^^Son, graficar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--660
+
+ []
+
+<ej3-a.png, id=122, 646.415pt x 114.4275pt>
+File: ej3-a.png Graphic file (type png)
+<use ej3-a.png>
+Package pdftex.def Info: ej3-a.png  used on input line 662.
+(pdftex.def)             Requested size: 271.7835pt x 48.10985pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--668
+
+ []
+
+<ej3-b.png, id=123, 645.41125pt x 115.43124pt>
+File: ej3-b.png Graphic file (type png)
+<use ej3-b.png>
+Package pdftex.def Info: ej3-b.png  used on input line 670.
+(pdftex.def)             Requested size: 271.7835pt x 48.6076pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--676
+
+ []
+
+<ej3-c.png, id=124, 645.41125pt x 114.4275pt>
+File: ej3-c.png Graphic file (type png)
+<use ej3-c.png>
+Package pdftex.def Info: ej3-c.png  used on input line 678.
+(pdftex.def)             Requested size: 271.7835pt x 48.18492pt.
+[15 <./ej2-a.png> <./ej2-b.png> <./ej2-c.png> <./ej2-d.png> <./ej3-a.png> <./ej
+3-b.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 681--684
+
+ []
+
+<ej3-d.png, id=134, 646.415pt x 115.43124pt>
+File: ej3-d.png Graphic file (type png)
+<use ej3-d.png>
+Package pdftex.def Info: ej3-d.png  used on input line 686.
+(pdftex.def)             Requested size: 271.7835pt x 48.53186pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--692
+
+ []
+
+<ej3-e.png, id=135, 647.41875pt x 114.4275pt>
+File: ej3-e.png Graphic file (type png)
+<use ej3-e.png>
+Package pdftex.def Info: ej3-e.png  used on input line 694.
+(pdftex.def)             Requested size: 271.7835pt x 48.03651pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--700
+
+ []
+
+<ej3-f.png, id=136, 647.41875pt x 114.4275pt>
+File: ej3-f.png Graphic file (type png)
+<use ej3-f.png>
+Package pdftex.def Info: ej3-f.png  used on input line 702.
+(pdftex.def)             Requested size: 271.7835pt x 48.03651pt.
+[16 <./ej3-c.png> <./ej3-d.png> <./ej3-e.png> <./ej3-f.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 711--714
+
+ []
+
+<ej4-a.png, id=144, 645.41125pt x 116.435pt>
+File: ej4-a.png Graphic file (type png)
+<use ej4-a.png>
+Package pdftex.def Info: ej4-a.png  used on input line 724.
+(pdftex.def)             Requested size: 362.37569pt x 65.3737pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--738
+
+ []
+
+<ej4-b.png, id=145, 644.4075pt x 111.41624pt>
+File: ej4-b.png Graphic file (type png)
+<use ej4-b.png>
+Package pdftex.def Info: ej4-b.png  used on input line 753.
+(pdftex.def)             Requested size: 362.37569pt x 62.65617pt.
+[17 <./ej4-a.png> <./ej4-b.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 758--761
+
+ []
+
+<ej4-c.png, id=154, 645.41125pt x 115.43124pt>
+File: ej4-c.png Graphic file (type png)
+<use ej4-c.png>
+Package pdftex.def Info: ej4-c.png  used on input line 785.
+(pdftex.def)             Requested size: 362.37569pt x 64.81013pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--798
+
+ []
+
+[18 <./ej4-c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 866--867
+
+ []
+
+<ej4-d.png, id=160, 645.41125pt x 111.41624pt>
+File: ej4-d.png Graphic file (type png)
+<use ej4-d.png>
+Package pdftex.def Info: ej4-d.png  used on input line 872.
+(pdftex.def)             Requested size: 362.37569pt x 62.55588pt.
+[19 <./ej4-d.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 877--880
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 896--898
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 941--942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 962--963
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 968--969
+
+ []
+
+<ej4-e.png, id=168, 648.4225pt x 117.43875pt>
+File: ej4-e.png Graphic file (type png)
+<use ej4-e.png>
+Package pdftex.def Info: ej4-e.png  used on input line 974.
+(pdftex.def)             Requested size: 362.37569pt x 65.63263pt.
+[21 <./ej4-e.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 979--982
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
+
+ []
+
+<ej4-f.png, id=173, 458.71375pt x 452.69125pt>
+File: ej4-f.png Graphic file (type png)
+<use ej4-f.png>
+Package pdftex.def Info: ej4-f.png  used on input line 1007.
+(pdftex.def)             Requested size: 226.48395pt x 223.51299pt.
+[22 <./ej4-f.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1015
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1036
+
+ []
+
+<ej4-g.png, id=178, 645.41125pt x 114.4275pt>
+File: ej4-g.png Graphic file (type png)
+<use ej4-g.png>
+Package pdftex.def Info: ej4-g.png  used on input line 1041.
+(pdftex.def)             Requested size: 362.37569pt x 64.24657pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
+
+ []
+
+
+Overfull \hbox (10.33533pt too wide) detected at line 1071
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
+
+ []
+
+<ej4-h.png, id=179, 404.51125pt x 273.02pt>
+File: ej4-h.png Graphic file (type png)
+<use ej4-h.png>
+Package pdftex.def Info: ej4-h.png  used on input line 1080.
+(pdftex.def)             Requested size: 271.7835pt x 183.43903pt.
+[23 <./ej4-g.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1086
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1088
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1089.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1106.
+
+[24 <./ej4-h.png>]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1143.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1179.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1199.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1221--1222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1233--1234
+
+ []
+
+<ej4-i.png, id=193, 648.4225pt x 118.4425pt>
+File: ej4-i.png Graphic file (type png)
+<use ej4-i.png>
+Package pdftex.def Info: ej4-i.png  used on input line 1239.
+(pdftex.def)             Requested size: 362.37569pt x 66.1936pt.
+[25 <./ej4-i.png>]
+Unidad 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1276
+
+ []
+
+[26
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1294.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1297
+
+ []
+
+
+Overfull \hbox (27.4703pt too wide) in paragraph at lines 1301--1302
+[]\OT1/cmr/m/n/12 Como muchas ve-ces son nu-merosas se uti-lizan sub^^S^^Pndice
+s para difer-en-cia-r-las: $\OML/cmm/m/it/12 x[]; x[]; :::; x[]$\OT1/cmr/m/n/12
+ . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1321
+
+ []
+
+[27]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1329.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1336
+
+ []
+
+Package mdframed Info: Not enough space on this page on input line 1336.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1344
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1355.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1373
+
+ []
+
+[28]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1390.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+
+ []
+
+[29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1581--1599
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1581--1599
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1581--1599
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1605--1622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1605--1622
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1712
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1717.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1728--1729
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1771--1774
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1771--1774
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1827
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1829--1830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1856--1857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1858--1883
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1858--1883
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1883.
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1948--1951
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1953.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1959.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1961--1962
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1967.
+[34] [35] [36] [37] [38] [39]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2905.
+ [40]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2918.
+
+Overfull \hbox (42.18623pt too wide) detected at line 3005
+ [] 
+ []
+
+[41]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3013.
+Package mdframed Info: Not enough space on this page on input line 3021.
+ [42] [43]
+Overfull \hbox (24.58278pt too wide) detected at line 3320
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3336--3338
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3349.
+[44]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3361.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3367.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3420.
+ [45]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3469.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3480--3481
+
+ []
+
+[46]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3513.
+ [47]
+Overfull \hbox (3.52936pt too wide) in paragraph at lines 3653--3654
+[]\OT1/cmr/m/n/12 De modo gen-eral, \OT1/cmr/m/it/12 el el-e-mento $\OML/cmm/m/
+it/12 c[]$ \OT1/cmr/m/it/12 se ob-tiene mul-ti-pli-cando, el-e-mento a el-e-men
+to y sumando,
+ []
+
+<mul-matrices-2.png, id=270, 351.3125pt x 200.75pt>
+File: mul-matrices-2.png Graphic file (type png)
+<use mul-matrices-2.png>
+Package pdftex.def Info: mul-matrices-2.png  used on input line 3667.
+(pdftex.def)             Requested size: 271.7835pt x 155.3162pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3681.
+[48 <./mul-matrices-2.png>] [49]
+Unidad 3.
+
+Overfull \hbox (1.0297pt too wide) in paragraph at lines 3703--3705
+[]\OT1/cmr/m/n/12 Introducci^^Son a la Matem^^Satica. \OT1/cmr/bx/n/12 Gi-gena,
+ Azpilicueta, G^^Somez, Joaqu^^S^^Pn, Molina.
+ []
+
+
+Overfull \hbox (14.5086pt too wide) in paragraph at lines 3707--3708
+[]\OT1/cmr/m/n/12 Conocimientos b^^Sasicos de Matem^^Satica. \OT1/cmr/bx/n/12 A
+l-lueva, Ale-jan-dre, Gonz^^Salez\OT1/cmr/m/n/12 . Matem^^Satica
+ []
+
+[50
+
+] (./teorico.aux) ) 
+Here is how much of TeX's memory you used:
+ 16497 strings out of 479383
+ 315153 string characters out of 5875831
+ 646327 words of memory out of 5000000
+ 33206 multiletter control sequences out of 15000+600000
+ 421072 words of font info for 96 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,20n,106p,577b,938s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1
+.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm12
+00.pfb>
+Output written on teorico.pdf (51 pages, 1570803 bytes).
+PDF statistics:
+ 354 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+

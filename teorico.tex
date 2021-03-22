@@ -1,0 +1,3711 @@
+%\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc} % acentos sin codigo
+\usepackage{ragged2e}
+\usepackage{blkarray}
+\usepackage{answers}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+
+
+\pagestyle{fancy} 
+
+\graphicspath{ {/home/lucas/Documentos/Ayudantias/Intro/Algebra/teorico/
+} }
+
+\fancyhf{}
+\lhead[\leftmark]{Ayud. Lucas Blanco}
+\rhead[Ayud. Lucas Blanco]{\leftmark}
+\lfoot[\thepage]{Introducción a la Matemática - FCEFyN - UNC - 2021}
+\rfoot[Introducción a la Matemática - FCEFyN - UNC - 2021]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}  
+
+\renewcommand{\chaptername}{Unidad}
+\renewcommand{\contentsname}{Índice}
+
+\usetikzlibrary{shadows}
+\newmdenv[shadow=true,shadowcolor=black,rightmargin=12pt]{shadedbox}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\begin{comment}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.50\textwidth]{unc.jpg}\par\vspace{1cm}
+	{\scshape\LARGE Universidad Nacional de C\'ordoba \par}
+	\vspace{1cm}
+	{\scshape\Large Facultad de Ciencias Ex\'actas, F\'isicas y Naturales\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Introducción a la Matemática\par}
+	{\scshape\LARGE Apuntes y Ejercicios Resueltos\par}	
+	\vspace{2cm}
+	{\Large\itshape Ayudante Lucas Blanco \par}
+	{\Large\bfseries 2021 \par}	
+	\vfill
+	versión 1.1\par
+	
+
+	\vfill
+% Bottom of the page
+	{\large \par}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\begin{comment}
+\chapter{Números Reales}
+\section{Introducción}
+\justify
+Comenzamos ésta unidad repasando los tipos de números que conforman el sistema de números reales.
+\justify
+Los diferentes tipos de números reales fueron inventados para satisfacer necesidades específicas. Para ello pensamos en que actividades necesitamos las personas a los números.
+
+\justify
+Lo primero que aprendemos a hacer es a contar objetos para eso utilizamos los números naturales o enteros positivos (1,2,3...) los cuales forman el \textit{conjunto de números naturales}:
+\begin{center}
+$\mathbb{N}=\lbrace1,2,3,...\rbrace$
+\end{center}
+
+\justify
+Lo segundo que aprendemos a hacer es a contar deudas o temperaturas bajo cero, para eso utilizamos los números negativos (...,-3,-2,-1) y el 0 los cuales forman el \textit{conjunto de números enteros}: 
+\begin{center}
+$\mathbb{Z}=\lbrace1,2,3,...\rbrace$
+\end{center}
+
+\justify
+Lo tercero que aprendemos es a contar con fracciones, cuando dividimos un chocolate o cortamos una pizza, para eso utilizamos los números racionales que tienen la forma $r = \frac{m}{n}$ como por ejemplo ($\frac{1}{2}, \frac{-3}{7}, \frac{17}{100}$ y forman el \textit{conjunto de números racionales}:
+\begin{center}
+$\mathbb{Q}=\lbrace\frac{m}{n} / m,n \in \mathbb{Q} \wedge n \not = 0\rbrace$
+\end{center}
+
+\justify
+Y finalmente aprendemos a usar valores que son ciertas magnitudes que no se pueden expresar como enteros y que usan raíces $\sqrt{2}$, o letras específicas como $\pi$, éstos valores se denominan números irracionales y forman el \textit{conjunto de números irracionales} $\mathbb{I}$.
+
+\justify
+Todos los conjuntos de números antes vistos forman el \textit{conjunto de números reales} $\mathbb{R}$.\\
+
+\centering
+\includegraphics[width=0.70\textwidth]{conjunto-de-numeros.jpg}\par\vspace{1cm}
+\pagebreak
+
+\begin{shadedbox}
+\underline{Ayuda Matemática:}\\
+\\
+\textit{En las matemáticas muchas veces utilizamos símbolos para expresar distintas relaciones. En este caso hemos utilizado los siguientes símbolos:}\\
+
+$\left. \begin{array}{rcl}
+/ &significa:& \textit{tal que}.\\
+\in &significa:& \textit{pertenece}.\\
+\wedge &significa:& \textit{y}.\\
+\end{array} \right.$
+\\
+\\
+Entonces la siguiente expresión se entiende de la siguiente manera:\\
+\\
+$\mathbb{Q}=\lbrace\frac{m}{n} / m,n \in \mathbb{Q} \wedge n \not = 0\rbrace$:
+\textit{"El conjunto de números racionales es igual al conjunto de número que tienen la forma de fracción $\frac{m}{n}$ tal que m y n pertenecen a los números racionales y n es distinto de cero"}.
+
+\end{shadedbox}
+
+\justify
+\section{Números Reales}
+\subsection{Operaciones-Propiedades}
+
+El conjunto de números reales tiene ciertas operaciones y propiedades que nos dicen que cosas se cumplen y que cosas no se cumplen con los números del conjunto. Éstas se dividen en operaciones de la suma (+) y las operaciones de multiplicación ($\cdot$), y se dice que ellas cumplen axiomas algebraicos.
+
+\justify
+Pero antes de ver los axiomas... Qué es un axioma?\\
+
+\begin{shadedbox}
+\underline{Ayuda Matemática:}\\
+\\
+\textit{Un axioma es una proposición o enunciado tan evidente que se considera que no requiere demostración.}\\
+\\
+Ésto quiere decir que nosotros aceptamos lo que dice ese axioma y no necesitamos saber el porqué se cumple. Ahora los estudiemos:
+\end{shadedbox}
+
+\subsubsection{\textit{Axiomas de la operación suma (+):}}
+Para todo a, b, c $\in \mathbb{R}$, a+b $\in \mathbb{R}$ se verifica:
+\begin{description}
+\item[A1.] $a+b=b+a$ \textbf{(Conmutatividad)}
+\item[A2.] $a+(b+c)=(a+b)+c$ \textbf{(Asociatividad)}
+\item[A3.] Existe un elemento en $\mathbb{R}$ que expresamos como "0" tal que $a+0=a$ para todo\\ a $\in\mathbb{R}$ \textbf{(Existencia del elemento neutro aditivo)}
+\item[A4.] Para cada a $\in \mathbb{R}$ existe un elemento en $\mathbb{R}$ que denotaremos $-a$ tal que $a+(-a)=0$ \textbf{(Existencia del opuesto aditivo)} 
+\end{description}
+
+\subsubsection{\textit{Axiomas de la operación multiplicación ($\cdot$):}}
+
+\begin{description}
+\item[M1.] $a \cdot b=b \cdot a$ \textbf{(Conmutatividad)}
+\item[M2.] $a\cdot(b\cdot c)=(a\cdot b)\cdot c$ \textbf{(Asociatividad)}
+\item[M3.] Existe un elemento en $\mathbb{R}$ que expresamos como "1" tal que $a\cdot 1=a$ para todo\\ a $\in\mathbb{R}$ \textbf{(Existencia del elemento neutro multiplicativo)}
+\item[M4.] Para cada a $\in \mathbb{R}-\lbrace 0 \rbrace$ existe un elemento en $\mathbb{R}$ que denotaremos $a^{-1}$ tal que $a\cdot (a^{-1})=1$ \textbf{(Existencia del inverso multiplicativo)} 
+\end{description}
+
+\subsubsection{\textit{Axiomas de ambas operaciones:}}
+
+\begin{description}
+\item[D.] $a \cdot (b+c) = a \cdot b + a \cdot c$ para todo $a,b,c \in \mathbb{R}$ \textbf{(Distributividad)}
+\end{description}
+
+\begin{shadedbox}
+{Definición:}\\
+\\
+En álgebra, cualquier conjunto no vacío (osea, que \textit{posee elementos}) con dos operaciones (\textit{suma y multiplicación}) definidas en él de manera tal que se cumplan los axiomas antes vistos, se denomina \textit{\textbf{cuerpo}}. El conjunto $\mathbb{R}$ es un cuerpo.
+\end{shadedbox}
+\justify
+
+\subsection{Relaciones de Orden}
+
+\justify
+Además de los axiomas antes vistos, en el conjunto de números reales ($\mathbb{R}$) se definen también las siguientes \textit{relaciones de orden}:\\
+
+$\left. \begin{array}{rccllllll}
+\bullet \thinspace < &:& \textit{menor que},& si &a<b.\\
+\bullet \thinspace > &:& \textit{mayor que},& si &a>b.\\
+\bullet \thinspace \leq &:& \textit{mayor o igual},& si &a \leq b, &entonces &a<b &o &a=b.\\
+\bullet \thinspace \geq &:& \textit{menor o igual},& si &a \geq b, &entonces &a>b &o &a=b. 
+\end{array} \right.$
+
+\justify
+Las relaciones de orden cumplen con los siguientes axiomas:
+\subsubsection{\textit{Axiomas de orden:}}
+
+\begin{description}
+\item[O1.] Para cada par de números reales a y b se cumple una, y solo una de las siguientes alternativas: $a<b$, $b<a$ o $a=b$.
+\item[O2.] si $a<b$ y $b<c$, entonces $a<c$.
+\item[O3.] si $a<b$, entonces para cada $c \in \mathbb{R}$, se cumple $a+c<b+c$.
+\item[O4.] si $a<b$ y $0<c$, entonces $a \cdot c < b \cdot c$
+\end{description}
+\pagebreak
+
+\justify
+\textit{\textbf{Ejemplos:}}
+\begin{itemize}
+\item \textit{Para el axioma 1:} si tenemos los valores 3 y 4, solo se cumple que $3<4$ porque 3 no es mayor que 4 ni son iguales.
+\item \textit{Para el axioma 2:} si tenemos 2, 3 y 4, $2<3$ y $3<4$ por lo tanto $2<4$.
+\item \textit{Para el axioma 3:} si tenemos 2, 3 y 4, $2+4<3+4$, ya que $6<7$.
+\item \textit{Para el axioma 4:} si tenemos 2, 3 y 4, $2 \cdot 4 < 3 \cdot 4$, ya que $8<12$.
+\end{itemize}
+
+\begin{shadedbox}
+{Definición:}\\
+\\
+Un cuerpo se dice \textit{ordenado}, si existe una relación de orden "$<$", que cumple con los cuatro axiomas de orden. $\mathbb{R}$ con los axiomas de suma y multiplicación, y los axiomas de orden es un \textit{cuerpo ordenado}.
+\end{shadedbox}
+
+\pagebreak
+
+
+
+\section{Desigualdades}
+\justify
+Algunos  problemas  en  álgebra  llevan  a  desigualdades  en  lugar  de  ecuaciones.  Una  desigualdad se ve muy semejante a una ecuación, excepto que en lugar del signo igual hay uno de los símbolos $<$, $>$, $\geq$ o $\leq$. A continuación veamos un ejemplo de una desigualdad:
+
+\begin{eqnarray}
+4x + 7 & \leq 19 \nonumber
+\end{eqnarray}
+
+\justify
+Los siguientes son  algunos  números que  satisfacen  la  desigualdad  y  algunos números que no la satisfacen:
+
+\[
+\begin{array}{r|ccc|l}
+	x & 4x+7 &\leq  &19& \\
+	\hline
+	1 & 11  & \leq & 19&si \\
+	2 & 15  & \leq & 19&si \\
+	3 & 19  & \leq & 19&si \\
+	4 & 23  & \leq & 19&no \\
+	5 & 27  & \leq & 19&no 
+\end{array}
+\]
+
+\justify
+\textit{\textbf{Resolver}} una desigualdad que contenga una variable significa hallar todos los valores de la variable que hagan verdadera la desigualdad. A diferencia de una ecuación, una desigualdad por lo general tiene un infinito de soluciones.
+
+\subsection{Propiedades de las Desigualdades}
+\justify
+A partir de los axiomas algebraicos y de orden se pueden mencionar las siguientes propiedades:
+
+\begin{enumerate}
+\item si $a>b$ entonces si se multiplica por un escalar en ambos miembros $-a<-b$
+\item si $a>b$ y $c<0$, entonces: $a \cdot c < b \cdot c$
+\item si $a^{-1}>0$, si y solo si, $a>0$
+\item si $a>b$ y $a \cdot b>0$, entonces: $a^{-1}<b^{-1}$
+\item si $a>b$ y $c>d$, entonces: $a+c > b+d$
+\item si $-a>0$, si y solo si, $a<0$
+\item si $a \not= 0$, entonces: $a^{2}>0$
+\end{enumerate}
+
+\justify
+\textit{\textbf{Ejemplos de las propiedades:}}
+
+\begin{enumerate}
+\item sean $3>2 \rightarrow (-)\cdot(3)<(-)\cdot(2) \rightarrow (-3)<(-2)$.
+\item sean $3>2$ y $(-2)<0$, entonces: $(3) \cdot (-2) < (2) \cdot (-2) \rightarrow (-6)<(-4)$
+\item sea $\frac{1}{4}>0$, entonces, $(\frac{1}{4})^{-1}>0 \rightarrow 4>0$
+\item si $3>2$ y $3 \cdot 2>0$, entonces: $3^{-1}<2^{-1} \rightarrow \frac{1}{3}<\frac{1}{2}$ 
+\item si $3>2$ y $4>1$, entonces: $3+4 > 2+1 \rightarrow 7>3$
+\item si $-(-3)>0 \rightarrow 3>0$, si y solo si, $(-3)<0$
+\item si $4 \not= 0$, entonces: $4^{2}>0 \rightarrow 16>0$
+\end{enumerate}
+\pagebreak
+
+\section{La Recta Real. Sistemas de Coordenadas}
+\justify
+
+Los números reales pueden ser representados por puntos sobre una recta. La dirección positiva (hacia la derecha) está indicada por una flecha. Escogemos un punto de referencia arbitrario O, llamado el origen, que corresponde al \textit{número real 0}. Dada cualquier unidad de medida conveniente, cada \textit{número positivo x} está representado por el punto sobre la recta a una distancia de x unidades a la derecha del origen, y cada \textit{número negativo –x} está representado por el punto a x unidades a la izquierda del origen.\\
+
+\centering
+\includegraphics[width=0.60\textwidth]{recta.jpg}\par\vspace{0.3cm}
+\textit{Fig.2 - Recta real}
+
+\justify
+El número asociado con el punto P se llama coordenada de P y la recta se llama \textit{recta coordenada},  o  \textit{recta  de  los  números  reales},  o  simplemente  \textit{recta  real}.
+
+\subsection{Sistemas de Coordenadas en el plano}
+
+\justify
+Un \textit{sistema de coordenadas} sobre el plano está formado por un par de rectas con sus escalas y construidas de forma tal que se corten. Las escalas de cada recta se configuran de forma que el \textit{"0"} de ambas sea el punto de intersección.\\
+
+\centering
+\includegraphics[width=0.50\textwidth]{sistema-de-coordenadas.png}\par\vspace{0.3cm}
+\textit{Fig.3 - Sistema de Coordenadas en el plano}
+
+\justify
+La distancia entre los puntos \textit{"0"} y \textit{"1"} define el tamaño de la escala que no necesariamente puede ser el mismo en ambos ejes coordenados.\\
+Si el tamaño de las dos escalas es el mismo, se dice que el sistema es \textbf{\textit{cartesiano}}(como el de la figura anterior).\\
+Además, generalmente se dibujan los dos ejes perpendiculares de forma que formen entre sí un ángulo de \textit{90 grados}, y en éste caso se dice que el sistema es \textit{\textbf{ortogonal}}.\\
+Finalmente, cada punto del plano queda en correspondencia \textit{"uno a uno"} (un \textit{valor de x} y un \textit{valor de y}), con un "par ordenado de números reales".
+\pagebreak
+
+\subsubsection{Punto en el Plano}
+
+\justify
+Teniendo las coordenadas de un punto (valor de a y de valor b) podemos graficar este mismo en un plano.\\
+Para ello debemos imaginar rectas paralelas a los ejes que corten a las mismas en los valores a y b correspondientes a los ejes x e y.\\
+Luego donde se intersecten dichas rectas debemos graficar nuestro punto \textit{P=(a,b)}.\\
+Se dice que \textbf{a} es la \textit{abscisa} del punto P, y \textbf{b} es la \textit{ordenada}. Nuestro punto queda definido por un \textit{par ordenado}.\\
+
+\centering
+\includegraphics[width=0.50\textwidth]{punto-en-plano.png}\par\vspace{0.3cm}
+\textit{Fig.4 - Punto en el plano}
+
+\justify
+En este caso nuestro punto P tiene coordenadas (x=-3;y=1), esto se denota de la forma P=(-3;1).
+
+\subsection{Sistema de Coordenadas en el espacio}
+
+\justify
+En el espacio, para determinar la ubicación de un punto debemos utilizar un dato más que nos indique en que plano se encuentra dicho punto. Es por eso que en el espacio utilizamos una \textit{\textbf{terna ordenada}} de números reales.\\
+En comparación con un punto en el plano, nuestro punto en éste posee su ubicación respecto a los \textit{ejes x e y}, y consideramos que el valor del \textit{plano $z=0$}. Pero cuando graficamos puntos en el espacio necesitamos ubicar cual es la posición del mismo con respecto al plano z.\\
+En la siguiente figura entenderemos mejor.\\
+
+\centering
+\includegraphics[width=0.30\textwidth]{punto-en-espacio.png}\par\vspace{0.3cm}
+\textit{Fig.5 - Punto en el espacio}
+\pagebreak
+
+\justify
+En este caso tenemos nuestro punto P graficado de azul en el espacio.
+Lo primero que debemos considerar es cuales son los valores de \textit{x e y} para nuestro punto.\\ 
+Estos son \textit{x=2 e y=3}. Si consideraramos nuestro punto en el plano, podriamos graficar este en la esquina donde intersectan las rectas paralelas a \textit{x e y} con esos valores (en este caso el valor de z=0).\\
+Luego, para obtener nuestro punto en el espacio (analizando su ubicacion respecto al eje z), debemos elevar nuestro punto tantas unidades como valga z (en este caso z=4).\\
+Para entenderlo mejor graficá un sistema de ejes coordenadas (x,y) en tu hoja. Luego atravesá el "0" con tu lápiz, e imaginando que el lápiz es nuestro eje z subí 4 unidades hasta ubicar nuestro punto en relación al plano z.\\
+¡Perfecto! Ya ubicamos nuestro punto.
+
+\subsubsection{Generalizando:}
+\justify
+Generalizando lo que acabamos de aprender podemos decir que cada terna ordenada de números reales queda en correspondencia "uno a uno" con los puntos del espacio, y es por ese motivo que identificamos, por ejemplo al punto "P" con la terna \textit{(a,b,c)} escribiendo \textit{P=(a,b,c)}.\\
+
+\centering
+\includegraphics[width=0.60\textwidth]{punto-espacio-gral.jpg}\par\vspace{0.3cm}
+\textit{Fig.6 - Punto en el espacio general}
+\pagebreak
+
+\justify
+\subsection{Valor Absoluto y Distancia}
+
+\begin{shadedbox}
+{\textbf{DEFINICIÓN DE VALOR ABSOLUTO:}}\\
+\\
+Si $a \in \mathbb{R}$ (si a es un número real) el \textbf{valor absoluto} de $a$ es:\\
+\[ |a| =
+\left\{
+\begin{array}{rcl}
+     a&si& \geq  0
+  \\ -a&si& < 0
+\end{array}
+\right.
+\]
+\justify
+\textit{Aclaración:} el valor absoluto es siempre un valor no negativo.
+\end{shadedbox}
+
+\justify
+\textit{\textbf{Ejemplos:}}
+\begin{enumerate}
+\item[\textbf{(a)}] $|3| = 3$
+\item[\textbf{(b)}] $|-3| = -(-3) = 3$
+\item[\textbf{(c)}] $|0| = 0$
+\item[\textbf{(d)}] $|3- \pi| = -(3- \pi) = \pi -3$
+\end{enumerate}
+
+\subsubsection{Propiedades}
+\begin{enumerate}
+\item[\textbf{1)}] $|a|=|-a|$
+\item[\textbf{2)}] $-|a|\leq a \leq|a|$
+\item[\textbf{3)}] $|a|\geq 0$ y $|a|=0$, si y solo si, $a=0$
+\item[\textbf{4)}] $|a\cdot b|=|a|\cdot |b|$
+\item[\textbf{5)}] $|a+b|\leq |a|+|b|$
+\item[\textbf{6)}] $||a|-|b|| \leq |a-b|$
+\item[\textbf{7)}] 
+
+$ |a|=b \longleftrightarrow
+\left\{
+\begin{array}{rr}
+     b \geq 0&
+     \\ y&
+  \\ -a=b& o \thinspace \thinspace \thinspace \thinspace a=b
+\end{array}
+\right.
+$
+
+\item[\textbf{8)}] si $b>0$, entonces, $|a|<b$, si y solo si, $ -b<a<b.$
+\item[\textbf{9)}] $|a|>b$, si y solo si, $a<-b$, o $a>b$
+\end{enumerate}
+
+\pagebreak
+
+\begin{shadedbox}
+{\textbf{DEFINICIÓN DE DISTANCIA:}}\\
+\\
+Si $a,b \in \mathbb{R}$, se denomina \textbf{distancia} del punto $a$ al $b$ a la expresión:\\
+
+\centering
+$d(a,b) = |b-a|$
+\end{shadedbox}
+
+\subsubsection{Propiedades}
+\begin{enumerate}
+\item[\textbf{1)}] $d(a,b)\geq 0$ y $d(a,b)=0 \longleftrightarrow a=b$
+\item[\textbf{2)}] $d(a,b)=d(b,a)$
+\item[\textbf{3)}] $d(a,b)\leq d(a,c)+d(c,b) \hspace{6pt}\forall \hspace{6pt} a,b,c \in \mathbb{R}$
+\end{enumerate}
+
+\justify
+\subsection{Intervalos}
+Antes de definir intervalos vamos a ver el concepto de conjuntos.
+
+\begin{shadedbox}
+{\textbf{DEFINICIÓN DE CONJUNTO:}}\\
+\\
+Un \textit{\textbf{conjunto}} es una colección de objetos, y estos objetos se llaman \textit{\textbf{elementos}} del conjunto.\\ 
+Si S es un conjunto, la notación $a \in S$ significa que $a$ es un elemento de $S$, y $b \not\in S$ quiere decir  que  b  no  es  un  elemento  de  S.\\
+\\  
+\textit{Por  ejemplo},  si  $\mathbb{N}$  representa  el  conjunto  de  los naturales,  entonces $2 \in \mathbb{N} $ pero $-1 \not\in \mathbb{N}$. 
+\end{shadedbox}
+
+\justify
+Algunos conjuntos pueden describirse si se colocan sus elementos dentro de llaves. \textit{Por ejemplo}, el conjunto \textit{A} que está formado por todos los enteros positivos menores que 7 se puede escribir como: $A=\lbrace 1,2,3,4,5,6 \rbrace $
+
+\justify
+También podemos escribir \textit{A} como: $A=\lbrace x / x \in \mathbb{N}$ y $0<x<7 \rbrace$.
+
+\justify
+Si S  y  T  son  \textit{conjuntos},  entonces  su  \textit{\textbf{unión}} $S \bigcup T$  es  el  conjunto  formado  por  todos  los  elementos  que  están en el conjunto S más aquellos que pertenecen al conjunto T.\\
+\\
+La  \textit{\textbf{intersección}}  de  S  y  T  es  el  conjunto  $S \bigcap T$ formado por todos los elementos que pertenecen al conjunto S y, al mismo tiempo, pertenecen al conjunto T.\\
+\\
+El \textit{\textbf{conjunto vacío}}, denotado por $\emptyset$, es el conjunto que no contiene elementos.
+
+\justify
+Ciertos conjuntos de números reales, llamados \textit{\textbf{intervalos}}, se presentan con frecuencia en  cálculo  y  corresponden  geométricamente  a  segmentos  de  recta.\\
+\pagebreak
+
+\justify
+Si $a,b \in \mathbb{R}$, definimos:\\
+
+\justify
+\textbf{\underline{INTERVALOS FINITOS:}}
+
+\justify
+\textbf{\textit{\underline{Intervalo Abierto}}} (de extremos $a$ y $b$):\\
+
+\centering
+$(a,b)=\lbrace x \in \mathbb{R} / a<x<b \rbrace$\\
+
+\justify
+Geométricamente corresponde al segmento de recta comprendido entre a y b sin incluir éstos extremos.
+
+\justify
+\textbf{\textit{\underline{Intervalo Cerrado}}} (de extremos $a$ y $b$):\\
+
+\centering
+$[a,b]=\lbrace x \in \mathbb{R} / a\leq x\geq b \rbrace$\\
+
+\justify
+Geométricamente corresponde al segmento de recta comprendido entre a y b incluyendo éstos extremos.
+
+\justify
+\textbf{\textit{\underline{Intervalo Semiabierto}}} (o semicerrado):\\
+
+\centering
+$(a,b]=\lbrace x \in \mathbb{R} / a<x\geq b \rbrace$ ó
+$[a,b)=\lbrace x \in \mathbb{R} / a\leq x<b \rbrace$\\
+
+\justify
+Geométricamente corresponde al segmento de recta comprendido entre a y b incluyendo uno de los dos extremos.
+
+\justify
+\textbf{\underline{INTERVALOS INFINITOS:}}
+
+\justify
+Conjunto de puntos mayores que $a$: $(a,\infty) = \lbrace x \in \mathbb{R} / x>a \rbrace$\\
+Corresponde a la semirecta derecha de origen a.
+
+\justify
+Conjunto de puntos menores que $a$: $(-\infty,a)= \lbrace x \in \mathbb{R} / x<a \rbrace$\\
+Corresponde a la semirecta izquierda de origen a.\\
+
+\centering
+\includegraphics[width=1\textwidth]{intervalos.png}\par\vspace{0.5cm}
+\textit{Fig.7 - Intervalos}
+\pagebreak
+
+\justify
+\textbf{\textit{Observaciones:}}
+
+\begin{enumerate}
+\item[\textbf{1)}] El intervalo $[a,a]$ es igual a ${a}$ que lo identificamos como $a$.
+\item[\textbf{2)}] Los intervalos $(a,a), [a,a)$ y $(a,a]$ son vacíos y los denotamos $\emptyset$.
+\item[\textbf{3)}] Para el intervalo de extremos $a$ y $b$, el punto de absisa $\frac{a+b}{2}$ es el \textbf{\textit{punto medio}} del intervalo.
+\item[\textbf{4)}] En el último caso, $|b-a|$, es la \textbf{\textit{longitud}} del intervalo.
+\item[\textbf{5)}] Los intervalos abiertos también se denotan $]a,b[$.
+\end{enumerate}
+
+\justify
+\textbf{Ejemplos de Graficación de Intervalos:}\\
+
+\centering
+\includegraphics[width=0.5\textwidth]{int-a.png}\par\vspace{0.1cm}
+\textbf{a)} $[-1,2) = \lbrace x/-1\leq x<2\rbrace$\\
+\hfill
+\hfill
+
+\centering
+\includegraphics[width=0.5\textwidth]{int-b.png}\par\vspace{0.1cm}
+\textbf{b)} $[1.5,4] = \lbrace x/1.5\leq x\leq 4\rbrace$\\
+\hfill
+\hfill
+
+\centering
+\includegraphics[width=0.5\textwidth]{int-c.png}\par\vspace{0.1cm}
+\textbf{c)} $(-3,\infty) = \lbrace x/-3<x\rbrace$\\
+
+\justify
+\subsection{Entornos}
+\textbf{Entorno Abierto Simétrico:}
+\justify
+Hay ocasiones en que es de interés el centro de un intervalo.  Definimos entonces:
+
+\justify
+\textbf{\textit{Entorno abierto simétrico}} de radio r y centro a, denotándolo $V_{r}(a)$, al conjunto:\\
+
+\centering
+\includegraphics[width=0.4\textwidth]{ent-sim.png}\par\vspace{0.1cm}
+
+\centering
+$V_{r}(a)=\lbrace x \in \mathbb{R} / |x-a|<r\rbrace$
+
+\justify
+Y, \textbf{\textit{entorno reducido}} de radio r y centro a al conjunto:\\
+
+\centering
+\includegraphics[width=0.4\textwidth]{ent-red.png}\par\vspace{0.1cm}
+\centering
+$V'_{r}(a)=\lbrace x \in \mathbb{R} / 0<|x-a|<r\rbrace$\\
+
+\justify
+Hay que notar que en el entorno reducido el punto $a$ está excluído.
+\pagebreak
+
+%\centering
+%\textbf{{\huge \underline{EJERCICIOS RESUELTOS}\\}}
+\section{Ejercicios Resueltos}
+
+\justify
+\textbf{CONJUNTOS:}
+
+\justify
+\textbf{\textit{\underline{Ejercicio 1:}}} Encontrar los conjuntos indicados si:\\
+
+$A=\lbrace 1,2,3,4,5,6,7\rbrace, \thinspace \thinspace \thinspace B=\lbrace 2,4,6,8 \rbrace, \thinspace \thinspace \thinspace C= \lbrace 7,8,9,10\rbrace$
+
+\justify
+\textbf{a)} $A\cup B$\\
+\textit{Respuesta:}
+$A\cup B=\lbrace 1,2,3,4,5,6,7,8\rbrace$
+
+\justify
+\textbf{b)} $B\cup C$\\
+\textit{Respuesta:}
+$B\cup C=\lbrace 2,4,6,7,8,9,10\rbrace$
+
+\justify
+\textbf{c)} $A\cup C$\\
+\textit{Respuesta:}
+$A\cup C=\lbrace 1,2,3,4,5,6,7,8,9,10\rbrace$
+
+\justify
+\textbf{d)} $A\cup B \cup C$\\
+\textit{Respuesta:}
+$A\cup B \cup C=\lbrace 1,2,3,4,5,6,7,8,9,10\rbrace$
+
+\justify
+\textbf{e)} $A\cap B$\\
+\textit{Respuesta:}
+$A\cap B=\lbrace 2,4,6\rbrace$
+
+\justify
+\textbf{f)} $B\cap C$\\
+\textit{Respuesta:}
+$B\cap C=\lbrace 8\rbrace$
+
+\justify
+\textbf{g)} $A\cap C$\\
+\textit{Respuesta:}
+$A\cap C=\lbrace 7\rbrace$
+
+\justify
+\textbf{h)} $A\cap B \cap C$\\
+\textit{Respuesta:}
+$A\cap B \cap C=\lbrace \emptyset \rbrace$
+
+\justify
+\textbf{INTERVALOS:}
+
+\justify
+\textbf{\textit{\underline{Ejercicio 2:}}} Encontrar el conjunto indicados si:\\
+
+\centering
+$A=\lbrace x/x \geq -2\rbrace$ \\
+\centering
+\includegraphics[width=0.6\textwidth]{ej2-A.png}\par\vspace{0.1cm}
+
+$B=\lbrace x/x<4 \rbrace$\\
+\includegraphics[width=0.6\textwidth]{ej2-B.png}\par\vspace{0.1cm}
+
+$C=\lbrace x/ -1 < x \leq 5\rbrace$\\
+\includegraphics[width=0.6\textwidth]{ej2-C.png}\par\vspace{0.1cm}
+\pagebreak
+
+\justify
+\textbf{a)} $B\cup C$\\
+\textit{Respuesta:}
+$A\cup B=\lbrace x/x \leq 5\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej2-a.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{b)} $B\cap C$\\
+\textit{Respuesta:}
+$A\cup B=\lbrace x/-1<x<4 \rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej2-b.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{c)} $A\cap C$\\
+\textit{Respuesta:}
+$A\cup B=\lbrace x/-2\leq x\leq 5 \rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej2-c.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{d)} $A\cap B$\\
+\textit{Respuesta:}
+$A\cup B=\lbrace x/-2\leq x< 4 \rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej2-d.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{\textit{\underline{Ejercicio 3:}}} Expresar el intervalo en términos de desigualdades y, a continuación, graficar el intervalo:\\
+
+\justify
+\textbf{a)} $(-3,0)$\\
+\textit{Respuesta:}
+$(-3,0)=\lbrace x/-3<x<0\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej3-a.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{b)} $(2,8]$\\
+\textit{Respuesta:}
+$(2,8]=\lbrace x/2<x\leq 8\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej3-b.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{c)} $[2,8)$\\
+\textit{Respuesta:}
+$[2,8)=\lbrace x/2\leq x< 8\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej3-c.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{d)} $[-6,-\frac{1}{2}]$\\
+\textit{Respuesta:}
+$[-6,-\frac{1}{2}]=\lbrace x/-6\leq x\leq -\frac{1}{2}\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej3-d.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{e)} $[2,\infty)$\\
+\textit{Respuesta:}
+$[2,\infty)=\lbrace x/2\leq x\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej3-e.png}\par\vspace{0.1cm}
+
+\justify
+\textbf{f)} $(-\infty,1)$\\
+\textit{Respuesta:}
+$(-\infty,1)=\lbrace x/x<1\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej3-f.png}\par\vspace{0.1cm}
+\pagebreak
+
+\justify
+\textbf{DESIGUALDADES:}
+\justify
+\textbf{\textit{\underline{Ejercicio 4:}}} Resolver las siguientes desigualdades y representar la solución en la recta real.
+
+\justify
+\textbf{a)} $\frac{1}{2}x + 2 \leq \frac{1}{4}x+3$\\
+\\
+\textit{Respuesta:}
+
+\begin{eqnarray}
+\frac{1}{2}x+2 & \leq & \frac{1}{4}x+3 \nonumber \\
+\frac{1}{2}x+2- \frac{1}{4}x - 2 & \leq & \frac{1}{4} + 3 -\frac{1}{4}x -2 \\
+\frac{1}{4}x &\leq& 1 \nonumber \\
+\frac{1}{4}x \cdot 4 &\leq& 1\cdot 4\\
+x & \leq & 4 \nonumber
+\end{eqnarray}
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-a.png}\par\vspace{0.1cm}
+
+\justify
+\begin{footnotesize}
+\textit{\underline{Aclaración:}} en álgebra no existe el "paso para el otro lado éste término" sino que cuando operamos debemos hacerlo con ambos miembros a la vez.
+En el caso de \textit{1.1} queremos ubicar las incógnitas en el primer miembro y los términos independientes en el segundo miembro. Para ello restamos a ambos miembros \textit{$\frac{1}{4}$ y $-2$.}
+En el caso de \textit{1.2} multiplicamos por \textit{4} en ambos miembros ya que queremos despejar nuestra incógnita.
+\end{footnotesize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\justify
+\textbf{b)} $2+2x<6x+10$\\
+\\
+\textit{Respuesta:}
+
+\begin{eqnarray}
+2+2x&<&6x+10\nonumber \\
+2x+2-6x-2 &<&6x+10-6x-2\nonumber \\
+-4x&<&8\nonumber \\
+-4x\cdot -\frac{1}{4} &>& 8\cdot -\frac{1}{4}\\
+x&>&-2\nonumber
+\end{eqnarray}
+
+\justify
+\begin{footnotesize}
+\textit{\underline{Aclaración:}} por propiedad 2 de desigualdades en \textit{1.3} al multiplicar por un número negativo se cambio la relación de orden.
+\end{footnotesize}
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-b.png}\par\vspace{0.1cm}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\justify
+\textbf{c)} $2>-3-3x\geq -7$\\
+\\
+\textit{Respuesta:}
+
+\begin{eqnarray}
+2>-3-3x \geq -7
+\end{eqnarray}
+
+\[
+\begin{array}{rrc|cll}
+	2 &>& -3-3x & -3-3x &\geq& -7 \\
+	2+3 &>& -3-3x+3 & -3-3x+3 &\geq& -7+3\\
+	5 &>&-3x & -3x &\geq& -4\\
+	5 \cdot (-\frac{1}{3}) &<& -3x \cdot (-\frac{1}{3}) & -3x \cdot (-\frac{1}{3}) &\leq& -4 \cdot (-\frac{1}{3})\\
+	-\frac{5}{3} &<&x & x &\leq& \frac{4}{3}\\
+\end{array}
+\]
+
+\justify
+Como nuestra desigualdad \textit{1.4} tiene dos partes resolvemos cada parte por separado.\\
+Luego, la solución está compuesta por el conjunto intersección de los dos conjuntos que son solución de cada caso particular. Entonces:
+
+\begin{eqnarray}
+\lbrace -\frac{5}{3}<x\rbrace \cup \lbrace x \leq \frac{4}{3}\rbrace = \lbrace-\frac{5}{3}<x\leq \frac{4}{3}\rbrace\nonumber
+\end{eqnarray}
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-c.png}\par\vspace{0.1cm}
+
+\justify
+\begin{footnotesize}
+\textit{\underline{Aclaración:}} podemos probar valuar las x del primer caso, o del segundo, en nuestra desigualdad y darnos cuenta que solo los valores del conjunto intersección entre esos dos conjuntos son los que dan una solución. Por eso se realiza la intersección y no la unión, por ejemplo.
+\end{footnotesize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textbf{d)} $x^{2}-4x+3 \leq 0$\\
+\\
+\textit{Respuesta:}\\
+Factorizando nos queda: $(x-3)\cdot(x-1)\leq 0$
+
+\justify
+Para resolver ésta desigualdad debemos analizar que según el valor que tome la incógnita x, $(x-3)$ y $(x-1)$ van a generan valores positivos o negativos.
+\justify 
+Por ejemplo, si $x=0$, $(x-3)=(-3)$ y $(x-1)=(-1)$ los dos con valores negativos, y si $x=2$, $(x-3)=(-1)$ y $(x-1)=(1)$ uno con valor negativo y el otro con valor positivo, y así con distintos valores.
+\justify 
+Entonces, a nosotros lo que nos interesa es que la multiplicación de signos que genere cada término sea menor a 0, es decir, que:
+
+\justify
+\textbf{1)} si $(x-3)>0$, entonces $(x-1)<0$ para que $(x-3)\cdot(x-1)\leq 0$, y\\
+\textbf{2)} si $(x-3)<0$, entonces $(x-1)>0$ para que $(x-3)\cdot(x-1)\leq 0$.\\
+\pagebreak
+
+\justify
+Analizando estos casos:\\
+
+\[
+\begin{array}{rrc|ccc||ccc|cll}
+	&+& & &-& & &-& & &+&\\
+	\hline
+	x-3 &>& 0 & x-1 &<& 0 & x-3 &<& 0 & x-1 &>& 0\\
+	x   &>& 3 & x   &<& 1 & x   &<& 3 & x   &>& 1 \\
+\end{array}
+\]
+
+\justify
+De la tabla podemos analizar lo siguiente:
+
+\justify 
+\textbf{a)} para todos los valores $\lbrace 3<x \rbrace \rightarrow (x-3)>0$\\  
+\textbf{b)} para todos los valores $\lbrace x<1 \rbrace \rightarrow (x-1)<0$
+
+\justify
+Y tomando la intersección tenemos que:
+
+\centering
+$\lbrace 3<x \rbrace \cup \lbrace x<1 \rbrace = \lbrace\emptyset\rbrace$.
+
+\justify
+Es decir, no comparten ningún valor para x en el que se cumpla las dos condiciones.
+
+\justify
+\textbf{Para el otro caso}, tenemos lo siguiente:
+
+\justify
+\textbf{a)} para todos los valores $\lbrace x<3 \rbrace \rightarrow (x-3)<0$\\  
+\textbf{b)} para todos los valores $\lbrace x>1 \rbrace \rightarrow (x-1)>0$
+
+\justify
+Y tomando la intersección tenemos que:
+
+\centering
+$\lbrace x<3 \rbrace \cup \lbrace 1<x \rbrace = \lbrace 1<x<3\rbrace$.
+
+\justify
+Es decir, todos los valores $1<x<3$ van a cumplir la condición de que $(x-3)<0$,$(x-1)>0$, y por lo tanto $(x-3)\cdot(x-1)\leq 0$. Se puede verificar reemplazando valores en la incógnita.
+
+\justify
+Por último, no podemos dejar pasar que el orden de relación de nuestra desigualdad es el siguiente "$\leq$" lo que significa que nuestra desigualdad además de ser \textit{"menor que cero"} también puede tomar el valor \textit{"igual a cero"}. Por lo tanto debemos buscar los valores de x que generen ceros.
+
+\justify
+Estos son:
+
+\justify
+\textbf{a)} $x=3$ ya que $(x-3)=0$, y\\
+\textbf{b)} $x=1$ ya que $(x-1)=0$.
+
+\justify
+Por lo tanto, 1 y 3 van a estar incluídos en nuestro conjunto. Finalmente, el conjunto solución de nuestra desigualdad es el siguiente:\\
+
+\centering
+$\lbrace x/ x \in \mathbb{R} \wedge 1\leq x \leq 3 \rbrace = [1,3]$.
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-d.png}\par\vspace{0.1cm} 
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\justify
+\textbf{e)} {\Large $\frac{1}{3x-1}<\frac{2}{x+5}$}\\
+\\
+\textit{Respuesta:}
+
+\begin{eqnarray}
+\frac{1}{3x-1}&<&\frac{2}{x+5}\nonumber\\
+\frac{1}{3x-1} - \frac{2}{x+5} &<& \frac{2}{x+5}-\frac{2}{x+5}\nonumber\\
+\nonumber\\
+\frac{(x+5)-2\cdot(3x-1)}{(3x-1)\cdot(x+5)}&<&0\nonumber\\
+\nonumber\\
+\frac{(x+5)-6x+2)}{(3x-1)\cdot(x+5)}&<&0\nonumber\\
+\nonumber\\
+\frac{-5x+7}{(3x-1)\cdot(x+5)}&<&0
+\end{eqnarray}
+
+\justify
+En este caso tenemos una fracción con un polinomio en el denominador y uno en el numerador, ambos con sus propios signos, y debemos buscar los valores de incógnitas de cada polinomio que generan que la fracción tenga un valor menor que 0. Por lo tanto tenemos que analizar dos casos:
+
+\justify
+\textbf{1)} si: $(-5x+7)>0$, entonces $(3x-1)\cdot(x+5)<0$\\
+\textbf{2)} si: $(-5x+7)<0$, entonces $(3x-1)\cdot(x+5)>0$\\
+
+\justify
+\textbf{Para 1)}
+\begin{eqnarray}
+-5x+7&>&0\nonumber\\
+-5x+7-7&>&0-7\nonumber\\
+-5x\cdot (-\frac{1}{5})&<&-7\cdot (-\frac{1}{5})\nonumber\\
+x&<&\frac{7}{5}\nonumber
+\end{eqnarray}
+
+\justify
+Entonces, para todo {\large $x<\frac{7}{5}$} $\rightarrow-5x+7>0$.
+
+\justify
+Debemos analizar entonces cuando $(3x-1)\cdot(x+5)<0$.
+Y aquí hay dos casos también:
+
+\justify
+$\overbrace{(3x-1)}^{1)-/2)+}\cdot\overbrace{(x+5)}^{1)+/2)-}<0$. Si el primer término es negativo el otro debe ser positivo, y si el primero es positivo el segundo debe ser negativo por propiedad de signos en una multiplicación. 
+\pagebreak
+
+\justify
+Analizando los 2 casos:
+
+\[
+\begin{array}{rrc|ccc||ccc|cll}
+	&-& & &+& & &+& & &-&\\
+	\hline
+	3x-1 &<& 0 & x+5 &>&0 & 3x-1&>&0 & x+5 &<&0\\
+	x&<& \frac{1}{3} & x&>&-5 & x&>&\frac{1}{3} & x&<&-5 \\
+\end{array}
+\]
+
+\justify
+Se llega a la conclusión que $(3x-1)\cdot(x+5)<0$ unicamente en el intervalo $\lbrace -5<x<\frac{1}{3} \rbrace$.
+
+\justify
+Si se toma un valor fuera de éste intervalo $(3x-1)$ y $(x+5)$ van a ser positivos los dos o negativos los dos a la misma vez. Por ejemplo, tomando $x=-10$ tenemos que $(3x-1)<0$ y $(x+5)<0$.
+
+\justify
+Para finalizar la \textbf{parte 1} tenemos que considerar que se deben cumplir dos cosas al mismo tiempo:
+
+\justify
+que {\large $x<\frac{7}{5}$}, y que $\lbrace -5<x<\frac{1}{3} \rbrace$, por lo tanto, el conjunto que va a cumplir con estas dos condiciones al mismo tiempo va a ser el conjunto intersección de los dos conjuntos, el cual es el siguiente:\\
+
+\centering
+$\lbrace x<\frac{7}{5}\rbrace$ $\cap$ $\lbrace -5<x<\frac{1}{3} \rbrace=$ $\lbrace -5<x<\frac{1}{3}\rbrace$ ó $(-5,\frac{1}{3})$
+
+\justify
+Verificamos que solo este conjunto va a generar que $(-5x+7)>0$, y $(3x-1)\cdot(x+5)<0$ al mismo tiempo. 
+
+\justify
+\textbf{Para 2)}
+\begin{eqnarray}
+-5x+7&<&0\nonumber\\
+-5x+7-7&<&0-7\nonumber\\
+-5x\cdot (-\frac{1}{5})&>&-7\cdot (-\frac{1}{5})\nonumber\\
+x&>&\frac{7}{5}\nonumber
+\end{eqnarray}
+
+\justify
+Entonces, para todo {\large $x>\frac{7}{5}\rightarrow$}, $-5x+7<0$.
+
+\justify
+Y de lo analizando anteriormente sabemos que en el intervalo $\lbrace x<-5 \cup \frac{1}{3}<x \rbrace$ se cumple que $(3x-1)\cdot(x+5)>0$, entonces finalmente obtenemos nuestro intervalo final para ésta parte que es el siguiente:\\
+
+\centering
+$\lbrace \frac{7}{5}<x\rbrace$ ó $(\frac{7}{5},\infty)$
+
+\justify
+Para finalizar nuestro ejercicio tenemos que considerar los conjuntos de las dos partes y hacer la unión de ellos. Estos valores de incógnita van a darnos la solución final de nuestra desigualdad, la cual es la siguiente:\\
+
+\centering
+$\lbrace -5<x<\frac{1}{3}\rbrace \cap \lbrace \frac{7}{5}<x \rbrace$ ó el intervalo $(-5,\frac{1}{3})\cap (\frac{7}{5},\infty)$\\
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-e.png}\par\vspace{0.1cm}
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textbf{f)} $|4x+5|=15$\\
+\\
+\textit{Respuesta:}
+
+\justify
+Por propiedad 7 de desigualdades: $|a|=b \longleftrightarrow a=b$ ó $a=-b$.
+
+\justify
+Entonces tenemos los dos siguientes casos:
+\[
+\begin{array}{rrr||lll}
+	&a=b& & &a=-b&\\
+	\hline
+	4x+5&=&15 & 4x+5&=&-15\\
+	4x+5-5&=&15-5 & 4x+5-5&=&-15-5\\
+	4x\cdot \frac{1}{4}&=&10\cdot \frac{1}{4} & 4x\cdot \frac{1}{4}&=&-20\cdot \frac{1}{4}\\
+	&&&&&\\
+	&x=\frac{5}{2}& & &x=-5&
+\end{array}
+\]
+
+\justify
+Por lo tanto, el conjunto solución es el siguiente:\\
+
+\centering
+$\lbrace x/x\in\mathbb{R} \wedge x=-5 \wedge x=\frac{5}{2}\rbrace$\\
+
+\centering
+\includegraphics[width=0.5\textwidth]{ej4-f.png}\par\vspace{0.1cm}
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textbf{g)} $|2x-7|<9$\\
+\\
+\textit{Respuesta:}
+
+\justify
+Por propiedad 8 de desigualdades: $|a|<b \longleftrightarrow -b<a<b$.
+
+\justify
+Entonces: $-9<2x-7<9$, por lo tanto tenemos dos casos:
+
+\[
+\begin{array}{rrr||lll}
+	-9&<&2x-7 & 2x-7&<&9\\
+	\hline
+	-9&<&2x-7 & 2x-7&<&9\\
+	-9+7&<&2x-7+7 & 2x-7+7&<&9+7\\	
+	-2\cdot \frac{1}{2}&<&2x\cdot\frac{1}{2} & 2x\cdot\frac{1}{2}&<&16\cdot\frac{1}{2}\\	
+	&&&&&\\	
+	-1&<&x & x&<&8
+\end{array}
+\]
+
+\justify
+Por lo tanto, el conjunto solución es el siguiente:\\
+
+\centering
+$\lbrace x/x\in\mathbb{R} \wedge -1<x<8 \rbrace = (-1,8)$\\
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-g.png}\par\vspace{0.1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textbf{h)} $|x-4|=|5-2x|$\\
+\\
+\textit{Respuesta:}
+
+\justify
+Resolviendo:
+\begin{eqnarray}
+|x-4|\cdot \frac{1}{|5-2x|}&=&|5-2x|\cdot\frac{1}{|5-2x|}\nonumber\\
+\frac{|x-4|}{|5-2x|}&=&1\nonumber
+\end{eqnarray}
+
+\justify
+Entonces para: {\Large $|\frac{x-4}{5-2x}|=1$}, tenemos dos casos ($|a|=b \longleftrightarrow a=b $ ó $ a=-b$):
+
+\[
+\begin{array}{rrr||lll}
+	\frac{x-4}{5-2x}&=1& & &\frac{x-4}{5-2x}=-1&\\
+	\hline
+	\frac{x-4}{5-2x}\cdot(5-2x)&=&1\cdot(5-2x) & \frac{x-4}{5-2x}\cdot(5-2x)&=&(-1)\cdot(5-2x)\\
+	x-4&=&5-2x & x-4&=&-5+2x\\
+	x-4+2x+4&=&5-2x+2x+4 & x-4-2x+4&=&-5+2x-2x+4\\
+	3x&=&9 & -x&=&-1\\
+	3x\cdot\frac{1}{3}&=&9\cdot\frac{1}{3} & -x\cdot(-1)&=&-1\cdot(-1)\\	
+	&&&&&\\	
+	&x=3& & &x=1&
+\end{array}
+\]
+
+\justify
+Por lo tanto, el conjunto solución es el siguiente:\\
+
+\centering
+$\lbrace x/x\in\mathbb{R} \wedge x=1 \wedge x=3\rbrace$\\
+
+\centering
+\includegraphics[width=0.6\textwidth]{ej4-h.png}\par\vspace{0.1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\justify
+\textbf{i)} {\Large $|\frac{2x-1}{x}|>2$}\\
+\\
+\textit{Respuesta}:
+\justify
+En primer lugar debemos considerar la definición de valor absoluto:\\
+
+$ {\large |\frac{2x-1}{x}|>2} \Longrightarrow
+\left\{
+\begin{array}{rrcll}
+	\frac{2x-1}{x}>2& si& \frac{2x-1}{x} &es &positivo
+	\\\cup&&&
+	\\-(\frac{2x-1}{x})>2 &si& \frac{2x-1}{x} &es &negativo
+\end{array}
+\right.
+$
+
+\justify
+Como vimos en un ejercicio anterior, para que la fracción tome valor positivo o negativo depende de los polinomios del numerador y denominador entonces debemos analizar cada caso puntual:
+
+\justify
+Para cuando $\frac{\overbrace{2x-1}^{-/+}}{\underbrace{x}_{-/+}}>0$ (positivo):
+
+%%%%%%
+\[ {\large \frac{2x-1}{x}>0} \Longrightarrow
+\begin{cases}
+\begin{cases}
+2x-1>0\\
+x>0
+\end{cases}
+\rightarrow
+\begin{cases}
+x>\frac{1}{2}\\
+\cap \rightarrow(\frac{1}{2}<x)\\
+x>0
+\end{cases}\\
+
+\cup\\
+
+\begin{cases}
+2x-1<0\\
+x<0
+\end{cases}
+\rightarrow
+
+\begin{cases}
+x<\frac{1}{2}\\
+\cap \rightarrow(x<0)\\
+x<0
+\end{cases}\\
+
+\end{cases}
+\]
+
+\justify 
+De aquí obtenemos el siguiente intervalo: $(-\infty,0)\cup (\frac{1}{2},\infty)$
+\pagebreak
+
+\justify
+Para cuando $\frac{\overbrace{2x-1}^{+/-}}{\underbrace{x}_{-/+}}<0$ (negativo):
+
+\[ {\large \frac{2x-1}{x}<0} \Longrightarrow
+\begin{cases}
+\begin{cases}
+2x-1>0\\
+x<0
+\end{cases}
+\rightarrow
+\begin{cases}
+x>\frac{1}{2}\\
+\cap \rightarrow(\emptyset)\\
+x<0
+\end{cases}\\
+
+\cup\\
+
+\begin{cases}
+2x-1<0\\
+x>0
+\end{cases}
+\rightarrow
+
+\begin{cases}
+x<\frac{1}{2}\\
+\cap \rightarrow(0,\frac{1}{2})\\
+x>0
+\end{cases}\\
+
+\end{cases}
+\]
+
+\justify 
+De aquí obtenemos el siguiente intervalo: $(0,\frac{1}{2})$
+
+\justify
+Por lo tanto, hasta ahora tenemos:
+
+\[ {\large |\frac{2x-1}{x}|>2} \Longrightarrow
+\begin{cases}
+\begin{cases}
+\frac{2x-1}{x}>2
+\end{cases}
+si \thinspace \thinspace x\in (-\infty,0) \cup (\frac{1}{2},\infty)\\
+
+\cup\\
+
+\begin{cases}
+-(\frac{2x-1}{x})>2
+\end{cases}
+si \thinspace \thinspace x\in (0,\frac{1}{2})\\
+
+\end{cases}
+\]
+
+\justify
+Resolviendo:
+
+\[ {\large |\frac{2x-1}{x}|>2} \Longrightarrow
+\begin{cases}
+\begin{cases}
+\frac{2x-1}{x}-2>0
+\rightarrow
+\frac{-1}{x}>0
+\end{cases}
+si \thinspace \thinspace x\in (-\infty,0) \cup (\frac{1}{2},\infty)\\
+
+\cup\\
+
+\begin{cases}
+-(\frac{2x-1}{x})-2>0
+\rightarrow
+\frac{-4x+1}{x}>0
+\end{cases}
+si \thinspace \thinspace x\in (0,\frac{1}{2})\\
+
+\end{cases}
+\]
+
+\justify
+Para el primer caso: $\frac{-1}{x}>0$, siguiendo el mismo procedimiento que analisis anteriores obtenemos el siguiente intervalo:\\
+
+\centering
+$\lbrace x/x\in\mathbb{R} \wedge x<0 \cap ((-\infty,0)\cup(\frac{1}{2},\infty))\rbrace=(-\infty,0)$\\
+
+\justify
+Para el segundo caso: $\frac{-4x+1}{x}>0$, siguiendo el mismo procedimiento que analisis anteriores obtenemos el siguiente intervalo:\\
+
+\centering
+$\lbrace x/x\in\mathbb{R} \wedge (0,\frac{1}{4}) \cap (0,\frac{1}{2})\rbrace=(0,\frac{1}{4})$\\
+
+\justify
+Finalmente nuestro conjunto solución es la unión de los conjuntos solución de los casos particulares:\\
+
+\centering
+$(-\infty,0) \cup (0,\frac{1}{4})$\\
+
+\centering
+\includegraphics[width=0.8\textwidth]{ej4-i.png}\par\vspace{0.1cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\end{comment}
+
+\chapter{Sistemas de Ec. Lineales y Matrices}
+\justify
+\section{Introducción}
+\justify
+Para comenzar nuestro estudio de ecuaciones consideramos el siguiente ejemplo:
+
+\begin{eqnarray}
+3x-2 & = & 6+x \nonumber \\
+3x-2+2-x & = & 6+x+2-x \\
+2x \thinspace \cdot \thinspace \frac{1}{2} & = & 8 \cdot \thinspace \frac{1}{2}\\
+x & = & 4
+\end{eqnarray}
+\\
+En 1.1 sumamos 2 y -x a ambos lados.\\
+En 1.2 resolvemos y multiplicamos por $\frac{1}{2}$ a ambos lados.\\
+Finalmente en 1.3 obtuvimos nuestro resultado.\\
+\\ 
+La expresi\'on \fbox{$3x - 2 = 6 + x$} se denomina \underline{ecuaci\'on}. En ella podemos reemplazar la inc\'ognita (\textit{x}) por distintos valores y solo algunos van a ser verdaderos. Cuando un valor es verdadero se denomina \underline{igualdad}.\\
+\\
+\underline{Si por ejemplo x=2:}
+
+\begin{eqnarray}
+3 \cdot (2) - 2 & =? & 6 + (2)\\
+4 & \not = & 8 \nonumber
+\end{eqnarray}
+\\
+{\footnotesize \textit{\underline{Aclaraci\'on:}} se utiliza el signo \textit{?} en \textbf{1.4} ya que no sabemos si es una igualdad y se est\'a poniendo a prueba.}\\
+\\
+En este caso 4 $\not$= 8 por lo que no es una igualdad, pero si \underline{x=4} si obtenemos una igualdad:
+
+\begin{eqnarray}
+3 \cdot (4) - 2 & =? & 6 + (4)\nonumber\\
+10 & = & 10\nonumber
+\end{eqnarray}
+\pagebreak
+
+\begin{itemize}
+\item En las ecuaciones la \textit{x} es nuestra \underline{inc\'ognita}.
+
+\item Siempre que tenemos ecuaciones nuestro problema consiste en buscar que valores de \textit{x} generan que nuestra ecuaci\'on sea una igualdad. 
+
+\item Cuando obtenemos el conjunto de valores que generan una soluci\'on (o igualdad) entonces hemos encontrado el \underline{\textit{conjunto soluci\'on}}.
+
+\item Si este conjunto es vac\'io, porque ning\'un valor de \textit{x} genera una soluci\'on, entonces la ecuaci\'on \underline{\textit{no tiene soluci\'on, o es incompatible}}.
+\end{itemize}
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN DE ECUACIÓN:}\\
+\\ 
+\textit{Una ecuaci\'on es una expresi\'on donde hay incognitas a determinar.}
+\end{shadedbox}
+
+\begin{itemize}
+\item En una ecuaci\'on podemos encontrar una o m\'as incognitas. Para expresarlas utilizamos las letras \textit{x,y,z}.
+\item Como muchas veces son numerosas se utilizan sub\'indices para diferenciarlas: $x_{1}, x_{2},...,x_{n}$.
+\end{itemize}
+
+\begin{flushleft}
+\underline{\textbf{N-upla:}}
+\end{flushleft}
+Se llama \textit{n-upla} al conjunto ordenado de \textit{n} elementos que indicamos ($a_{1},a_{2},...,a_{n}$).\\
+\\ En base al valor que tome \textit{n} tenemos distintos tipos de n-upla, por ejemplo:\\
+\begin{itemize}
+\item Si \textit{n=2} entonces la n-upla es un \underline{par ordenado:} ($a_{1}, a_{2}$). 
+\item Si \textit{n=3} entonces la n-upla es un \underline{terna ordenadada:} \thinspace ($a_{1}, a_{2}, a_{3}$).\\ Y as\'i sucesivamente...
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ecuaciones Lineales}
+
+Las ecuaciones lineales son aquellas en las que el exponente de las inc\'ognitas \textit{(x,y,z)} tienen valor a 1.\\
+\\
+\textit{Por ejemplo:}
+\begin{eqnarray}
+x_{1} + x_{2} - x_{3} = 1 \nonumber
+\end{eqnarray}
+Esta ecuacion es lineal ya que no aparece ning\'un exponente distinto a 1 como podr\'ia ser $x^{3}$ por ejemplo.
+\\
+\pagebreak
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN DE ECUACIÓN LINEAL:}\\
+\\ 
+\textit{Una ecuaci\'on lineal es aquella donde tenemos una sumatoria  de t\'erminos ($a_{1} \cdot x_{1}+...+a_{n} \cdot x_{n}$) igualada a una constante b, llamada \underline{t\'ermino independiente}.\\ 
+\\En cada t\'ermino de dicha sumatoria se tienen constantes o \underline{coeficientes} ($a_{1}+...+a_{n}$) que multiplican a las inc\'ognitas. Las inc\'ognitas tienen exponente 1 y no est\'an multiplicadas entre s\'i.}
+\\
+\\
+La forma gen\'enerica de una ecuaci\'on lineal es: ($a_{1} \cdot x_{1}+...+a_{n} \cdot x_{n} = b$)
+\end{shadedbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Sistemas de Ecuaciones Lineales}
+
+Se llama \underline{sistema de ecuaciones lineales} a un conjunto de ecuaciones que son lineales, es decir, un sistema donde cada ecuacion es de primer grado y no est\'an multiplicadas entre s\'i. Un ejemplo es el siguiente:
+\\
+
+\[\left\{
+\begin{array}{rrrrrcl}
+     2x&+&y&+&0z & = & 1
+  \\ x&+&y&+&3z & = & 4
+  \\ x&+&y&+&z & = & 6
+\end{array}
+\right.
+\]
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN DE SISTEMA DE ECUACIONES LINEALES:}
+\justify
+\textit{Un sistema de ecuaciones lineales es un conjunto finito de ecuaciones de tal tipo.\\ 
+Su soluci\'on est\'a constituida por el conjunto de soluciones comunes a todas ellas, es decir, aquellas soluciones que resuelven a todas las ecuaciones al mismo tiempo.}
+\end{shadedbox}
+
+\begin{itemize}
+\item \underline{Resolver} un sistema de ecuaciones lineales significa hallar todas las soluciones del mismo.
+\end{itemize}
+
+\begin{flushleft}
+\textit{\underline{Ejemplo:}}\\
+\end{flushleft}
+Para el sistema anterior podemos observar que los siguientes valores lo resuelven:
+\begin{eqnarray}
+x=-6; y=13; z=-1 \nonumber
+\end{eqnarray}
+Se verifica de la siguiente forma:\\
+
+\[\left\{
+\begin{array}{rrrrrcl}
+     2 \cdot (-6) &+& (13) &+& 0 \cdot (-1) & = & 1
+  \\ (-6) &+& (13) &+& 3 \cdot (-1) & = & 4
+  \\ (-6) &+& (13) &+& (-1) & = & 6
+\end{array}
+\right.
+\]
+
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
+\section{Matrices}
+
+\begin{shadedbox}
+\underline{Matrices y Sistemas de Ecuaciones:}\\
+\\ 
+\textit{Las matrices se utilizan para m\'ultiples aplicaciones y sirven, en particular, para representar los coeficientes de los sistemas de ecuaciones lineales. Como veremos m\'as adelante podemos escribir un sistema de ecuaciones lineales como una matriz.}
+\end{shadedbox}
+
+\subsection{Notaciones}
+\begin{itemize}
+\item Para definir una matriz se utilizan letras may\'uscualas.\\ \textit{Por ejemplo:} A es una matriz, B es otra matriz.
+\item Para mencionar una fila de una matriz utilizamos \textit{n}, y para una columna \textit{m}.\\ \textit{Por ejemplo:} A tiene 2 filas y 3 columnas, entonces \textit{n=2 y m=3}.
+\item Para expresar el conjunto de matrices se utiliza $\mathbb{K}^{nxm}$ indicando la cantidad de filas y columnas.\\ \textit{Por ejemplo:} en el caso de A, A $\in \mathbb{K}^{2x3}$.
+\item Para indicar un elemento en espec\'ifico se menciona el n\'umero de fila y columna.\\ \textit{Por ejemplo:} ${a_{1,1}}\in$ A es el elemento ubicado en la fila 1 y columna 1.
+\item Una matriz gen\'erica se escribe de la siguiente forma:\\
+
+\[ A^{n \times m} =
+\left[ \begin{array}{cccc|c}
+ a_{11} & a_{12} & \cdots & a_{1m} & b_{1}\\ 
+ a_{21} & a_{22} & \cdots & a_{2m} & b_{2}\\
+ \vdots & \vdots & \ddots & \vdots & \vdots\\
+ a_{n1} & a_{n2} & \cdots & a_{nm} & b_{n}
+\end{array} \right] \]\\
+
+Cuando a la matriz se le agrega la columna de términos independientes se obtiene la \textit{matriz ampliada del sistema}. Y se expresa de la siguiente forma: \textit{A $\mid$ H}.
+
+\item Finalmente expresamos nuestro ejemplo de Sistema de Ecuaci\'on Lineal de la secci\'on \textbf{1.3} como matriz:
+
+\[ A^{n \times m} = 
+\begin{matrix}
+\underbrace{
+\left[
+\begin{array}{ccc}
+ 2 & 1 & 0\\ 
+ 1 & 1 & 3\\ 
+ 1 & 1 & 1 
+\end{array}
+\right]
+}_{\substack{\text{A=($a_{ij}$)}\\
+             \text{Matriz de}\\
+             \text{Coeficientes}
+}}
+\cdot 
+\underbrace{
+\left[\begin{array}{c}
+x\\
+y\\
+z
+\end{array} 
+\right]
+}_{\substack{\text{X=($x_{i}$)}\\
+			 \text{Matriz de las}\\
+			 \text{Inc\'ognitas}
+}}
+=
+\underbrace{
+\left[\begin{array}{c}
+1\\
+4\\
+6
+\end{array} 
+\right]
+}_{\substack{\text{H=($h_{i}$)}\\
+			 \text{Matriz de}\\
+			 \text{los T\'erminos}\\
+			 \text{Independientes}
+}}
+= 
+\underbrace{A \cdot X = H}_{\text{Expresion matricial del sistema}}
+\end{matrix}
+\]
+
+\end{itemize}
+
+\pagebreak
+
+\subsection{Tipos de Matrices}
+\subsubsection{\underline{Matriz Nula}}
+Se llama \textit{matriz nula} a aquella que tiene todos sus elementos iguales a cero. Puede ser de cualquier tama\~no.\\
+\textit{Por ejemplo:}
+
+\[ A^{2 \times 3} =
+\left[ \begin{array}{ccc}
+ 0 & 0 & 0 \\ 
+ 0 & 0 & 0 
+\end{array} \right] \]
+
+\subsubsection{\underline{Matriz Cuadrada}}
+Se llama \textit{matriz cuadrada} a aquella que tiene igual n\'umero de filas y columnas.\\
+\textit{Por ejemplo:}
+
+\[ A^{2 \times 2} =
+\left[ \begin{array}{cc}
+ 4 & 1 \\ 
+ 2 & 8 
+\end{array} \right] \]
+
+\begin{flushleft}
+Cuando una matriz es cuadrada el valor de filas/columnas es su orden.\\ 
+En \'este caso: \textit{orden 2}.
+\end{flushleft}
+
+\subsubsection{\underline{Matriz Identidad}}
+Se llama \textit{matriz identidad} a la matriz cuadrada denotada \textit{I} tal que:
+
+\[I^{i \times j} =
+\left\{
+\begin{array}{rrccl}
+     1 & si & i & = & j
+  \\ 0 & si & i & \not= & j
+\end{array}
+\right. \]
+
+\justify
+\'Esto quiere decir que los elementos que tienen el \textit{mismo n\'umero de fila y columna} van a valer 1, y los elementos que tengan \textit{distinto n\'umero de fila y columna} van a valer 0.
+
+
+\begin{flushleft}
+\textit{Veamoslo en el siguiente ejemplo:}
+\\
+\end{flushleft}
+
+\[ I^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 0 & 0 & f1 \\
+  0 & 1 & 0 & f2 \\
+  0 & 0 & 1 & f3 \\
+\end{block}
+\end{blockarray}
+ \]
+
+\begin{flushleft}
+Esta es la matriz identidad de orden 3.
+\end{flushleft}
+
+\subsubsection{\underline{Matrices Iguales}}
+
+Dos matrices \textit{A y B} son iguales si tienen el mismo tama\~no $A^{n \times m} = B^{n \times m}$ y todos sus elementos son iguales $a_{ij} = b_{ij}$ para todo i y para todo j.\\
+\textit{Por ejemplo:}
+
+
+\[ A = B = 
+\begin{matrix}
+\left[
+\begin{array}{cc}
+1 & 0\\
+3 & 8
+\end{array}\right]
+=  
+\left[\begin{array}{cc}
+1 & 0\\
+3 & 8
+\end{array} 
+\right]
+\end{matrix}
+\]
+
+\pagebreak
+
+
+\subsection{Operaciones Elementales de Filas}
+
+Las operaciones elementales de filas son aquellas operaciones que nosotros le podemos realizar a una matriz del conjunto de matrices.\\ 
+A las filas de las matrices le podemos aplicar las siguientes operaciones:
+
+\begin{itemize}
+\item Multiplicaci\'on por un escalar \textit{c} $\not= 0.$
+\item Suma de filas por un escalar \textit{c} $\not= 0.$
+\item Intercambio de filas.
+\end{itemize} 
+
+\subsubsection{\underline{Operaci\'on elemental de fila tipo I}}
+Consiste en multiplicar una fila cualquiera \textit{i} por un escalar \textit{c} $\not= 0.$
+\\Esta operacion se denota $e_{i}(c)$ o de la forma: $c\cdot F_{i}$ con \textit{c} $\not= 0$.\textit{(Sólo afecta a la fila $e_{i}$).}\\
+\\
+\textit{\textbf{Por ejemplo:}}\\
+\\
+$\begin{matrix}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{1}(3)}{\hbox to 30pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right] 
+\end{matrix}
+$
+
+
+\subsubsection{\underline{Operaci\'on elemental de fila tipo II}}
+Consiste en sumarle a una fila otra fila distinta multiplicada por un escalar \textit{c} $\not= 0$.
+\\Esta operacion se denota $e_{ij}(c)$ o de la forma $F_{i} + c \cdot F_{j}$ con $c\not=0$.\textit{(Sólo afecta a la fila $e_{i}$, la fila $e_{j}$ no se modifica).}\\
+\\
+\textit{\textbf{Por ejemplo:}}\\
+\\
+$\begin{matrix}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{21}(-2)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 0 & 2 
+\end{array} \right] 
+\end{matrix}
+$
+\\
+
+\begin{flushleft}
+\underline{\textit{Aclaraci\'on:}} notar que en este caso hemos utilizado el escalar \textit{-2}. La fila 2 se ha modificado y la fila 1 ha quedado igual que antes de aplicar la operaci\'on.
+\end{flushleft}
+
+\subsubsection{\underline{Operaci\'on elemental de fila tipo III}}
+Consiste en intercambiar los lugares entre dos filas.
+\\Esta operacion se denota $e_{ij}$ o de la forma $F_{i} \Longleftrightarrow F_{j}$.\textit{(En este caso si se modifican dos filas porque se intercambian entre sí.)}\\
+\\
+\textit{\textbf{Por ejemplo:}}\\
+\\
+$\begin{matrix}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{12}}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 2 & 4 \\ 
+ 1 & 1 
+\end{array} \right] 
+\end{matrix}
+$
+
+\justify
+Los ejemplos demuestran que al aplicar una operaci\'on de fila a una matriz \textit{A} obtenemos una nueva matriz \textit{B}.\\
+Existe entonces una operaci\'on de fila del mismo tipo que va a generar que obtengamos nuevamente la matriz \textit{A} a partir de \textit{B}.
+Esta se denomina \textit{\textbf{operaci\'on inversa}} y se denota \textit{$e^{-i}$}.\\ 
+\textit{Significa que si tenemos A, le aplicamos una operación, y a partir de esto obtuvimos B, a B le podemos aplicar la operación inversa para obtener A.} 
+
+\justify
+\textit{\textbf{En general:}}
+
+\begin{itemize}
+\item Si $e_{i}=e_{i}(c)$ con c $\not= 0$, entonces: $e^{-i} = e_{i}(c^{-1})$. (Multiplicamos por el escalar inverso).
+\item Si $e_{i}=e_{ij}(c)$, entonces: $e^{-i} = e_{ij}(-c)$. (A la fila i se le suma la fila j con el escalar cambiado de signo).
+\item Si $e_{i}=e_{ij}$, entonces: $e^{-i} = e_{ji}$. (Intercambiamos ambas filas).
+\end{itemize}
+
+
+\begin{flushleft}
+\textbf{\textit{Ejemplos:}}
+\end{flushleft}
+\underline{\textbf{Operaci\'on elemental de fila tipo I y su operaci\'on inversa}}\\
+\\
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{i}=e_{1}(3)}{\hbox to 30pt{\rightarrowfill}}
+\underbrace{
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right]}_{B}
+\stackrel{e_{i}^{-1}=e_{1}(\frac{1}{3})}{\hbox to 30pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+=A
+\end{matrix}
+$
+\\
+\\
+\underline{\textbf{Operaci\'on elemental de fila tipo II y su operaci\'on inversa}}\\
+\\
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{i}=e_{21}(-2)}{\hbox to 40pt{\rightarrowfill}}
+\underbrace{
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 0 & 2 
+\end{array} \right]}_{B}
+\stackrel{e_{i}^{-1}=e_{21}(2)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+=A
+\end{matrix}
+$
+\\
+\\
+\underline{\textbf{Operaci\'on elemental de fila tipo III y su operaci\'on inversa}}\\
+\\
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{i}=e_{12}}{\hbox to 40pt{\rightarrowfill}}
+\underbrace{
+\left[ \begin{array}{cc}
+ 2 & 4 \\ 
+ 1 & 1 
+\end{array} \right]}_{B}
+\stackrel{e_{i}^{-1}=e_{12}}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+=A
+\end{matrix}
+$
+
+\subsection{Propiedades}
+\subsubsection{Matrices Equivalentes por Filas}
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN DE MATRIZ EQUIVALENTE POR FILAS:}
+\justify
+\textit{Si la matriz B se obtiene de A mediante la aplicaci\'on de una sucesi\'on finita de operaciones elementales de filas, se dice que B es equivalente por filas a A y lo escribimos:
+\begin{center}
+$B \thicksim A$
+\end{center}}
+\end{shadedbox}
+
+\justify
+\'Esta definici\'on nos dice que si tenemos dos matrices \textit{A y B} y se le aplica n-operaciones de filas a A y obtenemos B entonces \'estas dos son \textit{equivalentes por filas}.
+\justify
+\textit{\textbf{Por ejemplo:}\\}
+
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right]  
+\stackrel{e_{1}=e_{21}(-2)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 0 & 2 
+\end{array} \right] 
+\stackrel{e_{2}=e_{2}(\frac{1}{2})}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 0 & 1 
+\end{array} \right] 
+\stackrel{e_{3}=e_{12}(-1)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 0 \\ 
+ 0 & 1 
+\end{array} \right] 
+=B
+\end{matrix}
+$
+
+\justify
+Como observamos en el ejemplo \textit{A y B son equivalentes por filas} ya que obtuvimos B luego de aplicar 3 operaciones ($e_{1},e_{2},e_{3}$) de filas a A.
+
+\pagebreak
+
+\subsubsection{Propiedades}
+\justify
+Las matrices equivalentes por filas cumplen las siguientes propiedades:
+
+\begin{enumerate}
+\item \textbf{Reflexividad:} $A \thicksim A$ 
+\item \textbf{Simetría:} si $B \thicksim A$, entonces: $A \thicksim B$
+\item \textbf{Transitividad:} si $A \thicksim B$ y $B \thicksim C$, entonces: $A \thicksim C$
+\end{enumerate}
+
+\justify
+\textit{\underline{\textbf{Ejemplos:}}\\}
+\\
+\textit{\textbf{Propiedad 1:}}\\
+
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right]  
+\stackrel{e_{21}(-2)}{\hbox to 40pt{\rightarrowfill}}
+\underbrace{
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 0 & 2 
+\end{array} \right] 
+}_{\substack{\text{M:}\\
+             \text{Es una matriz}\\
+             \text{cualquiera}
+}}
+\stackrel{e_{21}(2)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+=A
+\end{matrix}
+$
+\justify
+\textbf{\textit{Propiedad 2:}}\\
+\\
+$
+\begin{matrix}
+B=
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right]  
+\stackrel{e_{1}(\frac{1}{3})}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+= A; A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{1}(3)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right]
+=B
+\end{matrix}
+$
+
+\justify
+\textbf{\textit{Propiedad 3:}}\\
+
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{1}(3)}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right]
+=B; B=
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right]  
+\stackrel{e_{2}(\frac{1}{2})}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 1 & 2 
+\end{array} \right] 
+= C; \\
+\end{matrix}
+$
+\justify
+\textit{entonces:\\}
+
+$\begin{matrix}
+A=
+\left[ \begin{array}{cc}
+ 1 & 1 \\ 
+ 2 & 4 
+\end{array} \right] 
+\stackrel{e_{1}(3)}{\hbox to 40pt{\rightarrowfill}}
+\underbrace{
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 2 & 4 
+\end{array} \right]
+}_{\substack{\text{B}
+}}
+\stackrel{e_{2}(\frac{1}{2})}{\hbox to 40pt{\rightarrowfill}}
+\left[ \begin{array}{cc}
+ 3 & 3 \\ 
+ 1 & 2 
+\end{array} \right] 
+= C\\
+\end{matrix}
+$
+\\
+\\
+\begin{shadedbox}
+\textbf{TEOREMA DE MATRICES EQUIVALENTES POR FILAS:}
+\justify
+\textit{Si la matriz A'$\mid$H' se obtiene de A$\mid$H mediante una operación elemental de filas, entonces los sistemas AX=H y A'X=H' tienen exactamente las mismas soluciones.}
+\end{shadedbox}
+
+\justify
+\textit{\textbf{Ejemplo:}}
+
+\[\begin{matrix} 
+A \mid H^{3 \times 3} =
+\begin{blockarray}{cccc}
+x & y & z\\
+\begin{block}{[ccc|c]}
+  1 & 2 & 1 & 2 \\
+  4 & 3 & 6 & 3 \\
+  2 & 1 & 2 & 1 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{21}(-4)}{\hbox to 40pt{\rightarrowfill}}
+
+A' \mid H'^{3 \times 3}=
+\begin{blockarray}{cccc}
+x & y & z\\
+\begin{block}{[ccc|c]}
+  1 & 2 & 1 & 2 \\
+  0 & -5 & 2 & -5 \\
+  2 & 1 & 2 & 1 \\
+\end{block}
+\end{blockarray}
+\end{matrix}
+ \]
+
+\justify
+Luego para verificar el teorema vamos a analizar nuestras matrices como sistemas de ecuaciones lineales:
+
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+     1x&+&2y&+&1z & = & 2
+  \\ 4x&+&3y&+&6z & = & 3
+  \\ 2x&+&1y&+&2z & = & 1
+\end{array}
+\right.
+
+\wedge
+\thinspace
+\thinspace
+
+\left\{
+\begin{array}{rrrrrcl}
+     1x&+&2y&+&1z & = & 2
+  \\ 0x&+&-5y&+&2z & = & -5
+  \\ 2x&+&1y&+&2z & = & 1
+\end{array}
+\right.
+\end{matrix}
+\]
+
+\pagebreak
+
+\justify
+Resolviendo éstos sistemas de ecuaciones lineales (más adelante veremos como) llegamos a que las soluciones de cada sistema son:
+
+\justify
+$\lbrace(x,y,z)=(0,1,0)\rbrace$\\
+$\lbrace(x,y,z)=(0,1,0)\rbrace$
+\\
+
+\begin{shadedbox}
+\textbf{COROLARIO:}
+\justify
+\textit{Si A'$\mid$H'$\thicksim$ A$\mid$H entonces los sistemas A$\cdot$ X=H y A'$\cdot$ X=H' tienen el mismo conjunto de soluciones.}
+\end{shadedbox}
+
+\begin{shadedbox}
+\textbf{AYUDA MATEMÁTICA:}
+\justify
+En matemática un \textit{\textbf{corolario}} es una proposición que no necesita prueba particular y se deduce con facilidad de lo demostrado previamente.\\
+\end{shadedbox}
+
+\subsection{Matriz Escalón Reducida por Filas}
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN MATRIZ ESCALÓN REDUCIDA POR FILAS}
+\justify
+Una matriz A es \textit{escalón reducida por filas}, si es una matriz nula o cumple con las siguientes condiciones:
+
+\begin{enumerate}
+
+\item[\textbf{1)}] Si A tiene filas nulas éstas están situadas debajo de las no nulas.
+\item[\textbf{2)}] El primer elemento no nulo de cada fila no nula es 1.
+\item[\textbf{3)}] En la columna correspondiente al primer elemento no nulo de cada fila no nula los elementos restantes son todos iguales a cero.
+\item[\textbf{4)}] Las filas no nulas están en escalera. Lo cual significa que, llamando elemento conductor de una fila al primer elemento no nulo de la misma, cada fila presenta a la izquierda de su elemento conductor más ceros que la anterior.
+
+\end{enumerate}
+\end{shadedbox}
+
+\justify
+$\bullet$ Para analizar esta definición primero vamos a distinguir cuales son \textit{\textbf{filas nulas}} (filas con todos sus elementos iguales a cero 0) en una matriz.
+\justify
+\textit{\textbf{Ejemplos:}}
+
+\[ \begin{matrix}
+
+ A^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 3 & 2 & f1 \\
+  0 & 0 & 0 & f2 \\
+ -4 & 0 & 1 & f3 \\
+\end{block}
+\end{blockarray}
+; \thinspace\thinspace
+
+ B^{4 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  0 & 0 & 0 & 0 & f1 \\
+  0 & 10 & 0 & 4 & f2 \\
+ -2 & 0 & 1 & 3 & f3 \\
+ -5 & 2 & 0 & 0 & f4 \\
+\end{block}
+\end{blockarray}
+;\thinspace\thinspace
+
+ C^{2 \times 2} =
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  1 & 2 & f1 \\
+  0 & 0 & f2 \\
+ 
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+\justify
+En éste caso tenemos 3 ejemplos, las \textit{matrices A, B y C}, como podemos observar en cada una hay una fila nula, ellas son: en A la fila 2 (f2), en B la fila 1 (f1), y en C la fila 2 (f2).
+\pagebreak
+
+\justify
+$\bullet$ Lo segundo que vamos a analizar es distinguir cuando el \textit{\textbf{primero elemento de una fila es no nulo}}. Esto es muy fácil de observar ya que al leer los elementos de una fila de izquierda a derecha el primer elemento seria el que tenga un valor distinto de cero luego de todos los demás ceros. 
+\justify
+\textit{Ejemplo:}
+
+$
+A^{4 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  3 & 0 & 0 & 0 & f1 \\
+  0 & 0 & 1 & 4 & f2 \\
+  0 & 0 & 0 & 0 & f3 \\
+  0 & 0 & 0 & 1 & f4 \\
+\end{block}
+\end{blockarray}
+$
+
+\justify
+En la matriz A observamos que:
+\justify
+\textbf{1)} en la fila 1 (f1) el primer elemento no nulo es el 3 ubicado en (f1,c1)=$a_{1,1}$.\\
+\textbf{2)} en la fila 2 (f2) el primer elemento no nulo es el 1 ubicado en (f2,c3)=$a_{2,3}$.\\
+\textbf{3)} en la fila 3 (f3) como es una fila nula no tiene elementos no nulos.\\
+\textbf{4)} en la fila 4 (f4) el primer elemento no nulo es el 4 ubicado en (f4,c4)=$a_{4,4}$.
+
+\justify
+$\bullet$ Lo tercero que vamos a analizar es distinguir cuando en \textit{\textbf{una columna de un primer elemento no nulo los restantes elementos son todos nulos.}} Para ello, encontrando el primer elemento no nulo de una fila como hicimos antes nos fijamos si los restantes elementos son no nulos. 
+
+\justify
+\textit{\textbf{Ejemplos:}}
+
+\[ \begin{matrix}
+
+ A^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 3 & 0 & f1 \\
+  0 & 0 & 2 & f2 \\
+  0 & 1 & 0 & f3 \\
+\end{block}
+\end{blockarray}
+; \thinspace\thinspace
+
+ B^{4 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  1 & 0 & 0 & 0 & f1 \\
+  1 & -2 & 0 & 4 & f2 \\
+ -2 & 2 & 1 & 3 & f3 \\
+ -5 & 2 & 0 & 0 & f4 \\
+\end{block}
+\end{blockarray}
+;\thinspace\thinspace
+
+ C^{2 \times 2} =
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  0 & 0 & f1 \\
+  0 & 0 & f2 \\
+ 
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+\justify
+En la \textbf{matriz A} observamos que:
+\justify
+\textbf{1)} en la fila 1 (f1) el primer elemento no nulo es el 1 ubicado en (f1,c1)=$a_{1,1}$, y los elementos restantes de la columna 1(c1) son nulos.\\
+\textbf{2)} en la fila 2 (f2) el primer elemento no nulo es el 2 ubicado en (f2,c3)=$a_{2,3}$, y los elementos restantes de la columna 3 (c3) son nulos.\\
+\textbf{3)} en la fila 3 (f3) el primer elemento no nulo es el 1 ubicado en (f3,c2)=$a_{3,2}$, y el elemento en (f2,c2)=$a_{2,2}$ es nulo pero el elemento (f2,c1)=$a_{2,1}$ no es nulo. Por lo que no cumple con la tercer condición.
+
+\justify
+En la \textbf{matriz B} observamos que:
+\justify
+\textbf{1)} todos los primeros elementos no nulos de todas las filas son los elementos de la primer columna (c1), y como todos tienen un valor distinto de cero entonces no se cumple la tercer condición.
+
+\justify
+En la \textbf{matriz C} observamos que:
+\justify
+\textbf{1)} al ser una matriz nula no tiene elementos no nulos y por definición es una matriz escalón reducida por filas sin necesidad de analizar las condiciones.
+\pagebreak
+
+\justify
+$\bullet$ Lo cuarto que vamos a analizar es distinguir cuando en una matriz sus \textbf{filas no nulas están en escalera}.
+
+\justify
+\textit{\textbf{Ejemplos:}}
+
+\[ \begin{matrix}
+
+ A^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  \underline{1} & 0 & 0 & f1 \\
+  0 & \underline{1} & 0 & f2 \\
+  0 & 0 & \underline{1} & f3 \\
+\end{block}
+\end{blockarray}
+; \thinspace\thinspace
+
+ B^{4 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  0 & \underline{1} & 0 & 0 & f1 \\
+  0 & 0 & \underline{1} & 1 & f2 \\
+  0 & 0 & 0 & \underline{1} & f3 \\
+  0 & 0 & 0 & 0 & f4 \\
+\end{block}
+\end{blockarray}
+\\
+
+ C^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  \underline{1} & 0 & 1 & f1 \\
+  0 & 0 & 0 & f2 \\
+  0 & 0 & \underline{1} & f3 \\ 
+\end{block}
+\end{blockarray}
+
+;\thinspace\thinspace
+
+ D^{2 \times 2} =
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  \underline{1} & 0 & f1 \\
+  0 & 0 & f2 \\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+ 
+\justify
+En la \textbf{matriz A} observamos que:
+\justify
+\textbf{1)} el primer elemento no nulo es $a_{1,1}$ y es el \textbf{elemento conductor} de la matriz. La segunda fila presenta su primer elemento no nulo en $a_{2,2}$ y un cero a la izquierda ordenadose como una escalera, y la tercer fila presenta su primer elemento no nulo en $a_{3,3}$ y dos ceros a la izquierda ordenando la matriz como una escalera perfecta.
+
+\justify
+En la \textbf{matriz B} observamos que:
+\justify
+\textbf{1)} el \textbf{elemento conductor} de la matriz es $b_{1,2}$ y forma una escalera con los elementos $b_{2,3}$ y $b_{3,4}$. Observar que no importa la presencia de un 1 en $b_{2,4}$ para que se cumpla que está ordenada en forma de escalera.
+
+\justify
+En la \textbf{matriz C} observamos que:
+\justify
+\textbf{1)} el \textbf{elemento conductor} de la matriz es $c_{1,1}$ y forma una escalera con el elemento $c_{3,3}$.
+
+\justify
+En la \textbf{matriz D} observamos que:
+\justify
+\textbf{1)} el \textbf{elemento conductor} de la matriz es $d_{1,1}$ y forma una escalera con si mismo.
+
+\justify
+Teniendo en cuenta todo lo analizado podemos distinguir que matrices son matrices escalón reducida por filas y cuales no.
+
+\justify
+\textit{\textbf{Ejemplos:}}
+
+\[ \begin{matrix}
+
+ A^{3 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  1 & 0 & 0 & 0 & f1 \\
+  0 & 1 & 0 & 0 & f2 \\
+  0 & 0 & 1 & 1 & f3 \\
+\end{block}
+\end{blockarray}
+; \thinspace\thinspace
+
+ B^{4 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  0 & 1 & 0 & 0 & f1 \\
+  0 & 0 & 1 & 1 & f2 \\
+  0 & 0 & 0 & 1 & f3 \\
+  0 & 0 & 0 & 0 & f4 \\
+\end{block}
+\end{blockarray}
+\\
+
+ C^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 0 & 1 & f1 \\
+  0 & 0 & 0 & f2 \\
+  0 & 0 & 1 & f3 \\ 
+\end{block}
+\end{blockarray}
+
+;\thinspace\thinspace
+
+ D^{2 \times 2} =
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  2 & 0 & f1 \\
+  0 & 2 & f2 \\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+\justify
+Observamos que:
+
+\justify
+\textbf{1)} la \textbf{matriz A} \textbf{si} es escalón reducida por filas porque cumple con las condiciones 1,2,3,4.
+
+\justify
+\textbf{2)} la \textbf{matriz B} \textbf{no} es escalón reducida por filas porque no cumple con la condición 3 ya que posee un elemento no nulo en $b_{2,4}$ cuando éste debería ser nulo.
+
+\justify
+\textbf{3)} la \textbf{matriz C} \textbf{no} es escalón reducida por filas porque no cumple con la condición 3 ya que posee un elemento no nulo en $c_{1,3}$ cuando éste debería ser nulo, y no cumple con la condición 1 ya que la fila 2 es nula y debería estar debajo de todas las filas no nulas.
+
+\justify
+\textbf{4)} la \textbf{matriz D} \textbf{no} es escalón reducida por filas porque no cumple con la condición 2 ya que los primeros elementos no nulos de cada fila no valen 1.
+
+\justify
+\textit{\underline{Observación:}} a las matrices que no son escalón reducida por filas podemos convertirlas en escalón reducida por filas a partir de las operaciones elementales de fila vistas antes.
+
+\subsubsection{REDUCCIÓN DE MATRICES} 
+\justify
+¡Ahora aprendamos a reducir matrices!\\
+Para ello debemos utilizar las operaciones elementales de fila y las condiciones de matriz escalón reducida por filas.\\
+A una matriz dada debemos aplicarle tantas operaciones como sean necesarias hasta que la matriz cumpla con las condiciones de matriz escalón reducida por filas.
+
+\justify
+\textit{\textbf{Ejemplos:}}\\
+\textit{\textbf{Ejemplo 1:}}
+\[ \begin{matrix}
+
+ A^{3 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  1 & 0 & 0 & 0 & f1 \\
+  0 & 1 & 0 & 0 & f2 \\
+  0 & 0 & 1 & 1 & f3 \\
+\end{block}
+\end{blockarray}
+\end{matrix}
+\]
+
+\justify
+En este caso como la matriz cumple con las condiciones para ser una matriz escalón reducida por filas no debemos utilizar ninguna operación elemental de filas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\justify
+\textit{\textbf{Ejemplo 2:}}
+\[\begin{matrix} 
+
+B^{4 \times 4} =
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  0 & 1 & 0 & 0 & f1 \\
+  0 & 0 & 1 & 1 & f2 \\
+  0 & 0 & 0 & 1 & f3 \\
+  0 & 0 & 0 & 0 & f4 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{23}(-1)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccccc}
+c1 & c2 & c3 & c4\\
+\begin{block}{[cccc]c}
+  0 & 1 & 0 & 0 & f1 \\
+  0 & 0 & 1 & 0 & f2 \\
+  0 & 0 & 0 & 1 & f3 \\
+  0 & 0 & 0 & 0 & f4 \\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+\justify
+Para que B sea escalón reducida por filas solo faltaba que $a_{2,3}$ sea un elemento no nulo por eso utilizamos la operación elemental por fila II. Multiplicando la fila 3 por el escalar -1 y sumandosela a la fila 2 obtenemos como resultado que el elemento $a_{2,3}$ sea nulo.
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+\justify
+\textit{\textbf{Ejemplo 3:}}
+\[\begin{matrix} 
+
+C^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 0 & 1 & f1 \\
+  0 & 0 & 0 & f2 \\
+  0 & 0 & 1 & f3 \\ 
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{13}(-1)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 0 & 0 & f1 \\
+  0 & 0 & 0 & f2 \\
+  0 & 0 & 1 & f3 \\ 
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{23}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 0 & 0 & f1 \\
+  0 & 0 & 1 & f2 \\ 
+  0 & 0 & 0 & f3 \\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+\justify
+Como en el caso anterior, para que C sea escalón reducida por filas faltaba que se cumplan dos cosas, primero que $a_{1,3}$ sea un elemento no nulo. Por eso utilizamos la operación elemental por fila II, multiplicando la fila 3 por el escalar -1 y sumandosela a la fila 1 obtenemos como resultado que el elemento $a_{1,3}$ sea nulo.\\ 
+Y segundo, que la fila 2 que es nula se ubique debajo de las filas no nulas por lo que se aplicó la operación elemental de final III. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55555
+\justify
+\textit{\textbf{Ejemplo 4:}}
+\[\begin{matrix} 
+
+D^{2 \times 2} =
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  2 & 0 & f1 \\
+  0 & 2 & f2 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{1}(\frac{1}{2})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  1 & 0 & f1 \\
+  0 & 2 & f2 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{2}(\frac{1}{2})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccc}
+c1 & c2\\
+\begin{block}{[cc]c}
+  1 & 0 & f1 \\
+  0 & 1 & f2 \\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+\justify
+En éste caso, para que D sea escalón reducida por filas falta que los primeros elementos no nulos de las filas 1 y 2 sean valor 1.\\
+Por lo tanto se aplicó la operación elemental de fila I multiplicando por $\frac{1}{2}$ a ambas filas y convirtiendo estos elementos en 1.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
+\justify
+\textit{\textbf{Ejemplo 5:}}
+\[\begin{matrix} 
+
+E^{3 \times 3} =
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 3 & 2 & f1 \\
+  0 & 0 & 0 & f2 \\
+ -4 & 0 & 1 & f3 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{31}(4)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 3 & 2 & f1 \\
+  0 & 0 & 0 & f2 \\
+  0 & 12 & 9 & f3 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{32}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 3 & 2 & f1 \\
+  0 & 12 & 9 & f2 \\
+  0 & 0 & 0 & f3 \\
+\end{block}
+\end{blockarray}
+\\
+
+\stackrel{e_{2}(\frac{1}{12})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 3 & 2 & f1 \\
+  0 & 1 & \frac{9}{12} & f2 \\
+  0 & 0 & 0 & f3 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{12}(-3)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+c1 & c2 & c3\\
+\begin{block}{[ccc]c}
+  1 & 0 & -\frac{3}{12} & f1 \\
+  0 & 1 & \frac{9}{12} & f2 \\
+  0 & 0 & 0 & f3 \\
+\end{block}
+\end{blockarray}
+
+
+\end{matrix}
+ \]
+
+\justify
+En éste caso, para que E debemos aplicar varias operaciones elementales de filas, éstas son:
+
+\justify
+\textbf{1)} Utilizamos el elemento $a_{1,1}$ como conductor y resolvemos para que en la columna 1 se cumpla la \textbf{condición 3} de matriz escalón reducida por filas.
+
+\justify
+\textbf{2)} Intercambiamos la fila 2 y 3 para que las filas nulas de la matriz se ubiquen debajo de las filas no nulas.
+
+\justify
+\textbf{3)} Utilizamos la operación elemental de fila I para que el elemento $a_{2,2}$ sea 1 y sea más fácil realizar las siguientes operaciones.
+
+\justify
+\textbf{4)} Utilizamos la operación de fila II para cumplir con la condición 3 y obtener nuestra matriz escalón reducida por filas.
+
+\justify
+Verificar si esta matriz cumple con las 4 condiciones.
+
+\justify
+\textit{\underline{Observación:}} notar que cuando aplicamos operaciones elementales de filas no solo se modifica el valor de la columna que queremos operar sino todos los de la fila con la que estamos interactuando, es por eso que debemos prestar muchisima atención a realizar todos los calculos y operar todos los valores de la fila a la que le estamos aplicando una operación. Si aplicamos la operación a una fila en particular, las demás filas quedan igual que como estaban antes de aplicar esta operación.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textit{\textbf{Ejemplo 6:}}
+\[\begin{matrix} 
+
+F^{4 \times 4} =
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 2 & 0 & 0\\
+  0 & 1 & 0 & 5\\
+  1 & 0 & 3 & 6\\
+  1 & 1 & 2 & 0\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{31}(-1)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 2 & 0 & 0\\
+  0 & 1 & 0 & 5\\
+  0 & -2 & 3 & 6\\
+  1 & 1 & 2 & 0\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{41}(-1)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 2 & 0 & 0\\
+  0 & 1 & 0 & 5\\
+  0 & -2 & 3 & 6\\
+  0 & -1 & 2 & 0\\
+\end{block}
+\end{blockarray}
+\\
+
+\stackrel{e_{12}(-2)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & -10\\
+  0 & 1 & 0 & 5\\
+  0 & -2 & 3 & 6\\
+  0 & -1 & 2 & 0\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{32}(2)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & -10\\
+  0 & 1 & 0 & 5\\
+  0 & 0 & 3 & 16\\
+  0 & -1 & 2 & 0\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{42}(1)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & -10\\
+  0 & 1 & 0 & 5\\
+  0 & 0 & 3 & 16\\
+  0 & 0 & 2 & 5\\
+\end{block}
+\end{blockarray}
+
+\\
+
+\stackrel{e_{4}(3)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & -10\\
+  0 & 1 & 0 & 5\\
+  0 & 0 & 3 & 16\\
+  0 & 0 & 6 & 15\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{43}(-2)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & -10\\
+  0 & 1 & 0 & 5\\
+  0 & 0 & 3 & 16\\
+  0 & 0 & 0 & -17\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{4}(-\frac{1}{17})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & -10\\
+  0 & 1 & 0 & 5\\
+  0 & 0 & 3 & 16\\
+  0 & 0 & 0 & 1\\
+\end{block}
+\end{blockarray}
+
+\\
+
+\stackrel{e_{14}(10)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & 0\\
+  0 & 1 & 0 & 5\\
+  0 & 0 & 3 & 16\\
+  0 & 0 & 0 & 1\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{24}(-5)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & 0\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 3 & 16\\
+  0 & 0 & 0 & 1\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{34}(-16)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & 0\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 3 & 0\\
+  0 & 0 & 0 & 1\\
+\end{block}
+\end{blockarray}
+\\
+
+\stackrel{e_{3}(\frac{1}{3})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & 0\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 1 & 0\\
+  0 & 0 & 0 & 1\\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textit{\textbf{Ejemplo 7:}}
+\[\begin{matrix} 
+
+G^{2 \times 3} =
+\begin{blockarray}{ccc}
+\begin{block}{[ccc]}
+  3 & 2 & -1\\
+  1 & 5 & 2\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{12}(-3)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccc}
+\begin{block}{[ccc]}
+  0 & -13 & -7\\
+  1 & 5 & 2\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{12}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccc}
+\begin{block}{[ccc]}
+  1 & 5 & 2\\
+  0 & -13 & -7\\
+\end{block}
+\end{blockarray}
+
+\\
+
+\stackrel{e_{2}(-\frac{1}{13})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccc}
+\begin{block}{[ccc]}
+  1 & 5 & 2\\
+  0 & 1 & \frac{7}{13}\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{12}(-5)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccc}
+\begin{block}{[ccc]}
+  1 & 0 & -\frac{9}{13}\\
+  0 & 1 & \frac{7}{13}\\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+ \]
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textit{\textbf{Ejemplo 8:}}
+\[\begin{matrix} 
+
+H^{4 \times 2} =
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 2\\
+  -1 & -2\\
+  -3 & 6\\
+  8 & -3\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{21}(1)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 2\\
+  0 & 0\\
+  -3 & 6\\
+  8 & -3\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{31}(3)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 2\\
+  0 & 0\\
+  0 & 12\\
+  8 & -3\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{41}(-8)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 2\\
+  0 & 0\\
+  0 & 12\\
+  0 & -19\\
+\end{block}
+\end{blockarray}
+
+\\
+
+\stackrel{e_{3}(\frac{1}{12})}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 2\\
+  0 & 0\\
+  0 & 1\\
+  0 & -19\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{13}(-2)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 0\\
+  0 & 0\\
+  0 & 1\\
+  0 & -19\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{43}(19)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 0\\
+  0 & 0\\
+  0 & 1\\
+  0 & 0\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{23}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cc}
+\begin{block}{[cc]}
+  1 & 0\\
+  0 & 1\\
+  0 & 0\\
+  0 & 0\\
+\end{block}
+\end{blockarray}
+\end{matrix}
+ \]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\justify
+\textit{\textbf{Ejemplo 9:}}
+\[\begin{matrix} 
+
+I^{1 \times 5} =
+\begin{blockarray}{ccccc}
+\begin{block}{[ccccc]}
+  6 & 24 & 12 & 36\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{1}(\frac{1}{6}) }{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{ccccc}
+\begin{block}{[ccccc]}
+  1 & 4 & 2 & 6\\
+\end{block}
+\end{blockarray}
+\end{matrix}
+ \]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\justify
+\textit{\textbf{Ejemplo 10:}}
+
+\[\begin{matrix} 
+J^{5 \times 1} =
+\begin{blockarray}{c}
+\begin{block}{[c]}
+  3\\
+  1\\
+  -7\\
+  -2\\
+  5\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{12}(-3)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{c}
+\begin{block}{[c]}
+  0\\
+  1\\
+  -7\\
+  -2\\
+  5\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{32}(7)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{c}
+\begin{block}{[c]}
+  0\\
+  1\\
+  0\\
+  -2\\
+  5\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{42}(2)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{c}
+\begin{block}{[c]}
+  0\\
+  1\\
+  0\\
+  0\\
+  5\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{52}(-5)}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{c}
+\begin{block}{[c]}
+  0\\
+  1\\
+  0\\
+  0\\
+  0\\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{12}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{c}
+\begin{block}{[c]}
+  1\\
+  0\\
+  0\\
+  0\\
+  0\\
+\end{block}
+\end{blockarray}
+
+\end{matrix}
+\]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{shadedbox}
+\textbf{TEOREMA:}
+\justify
+\textit{Toda matriz $A \in \mathbb{K}^{mxn}$ es equivalente por filas a una matriz escalón reducida por filas.}
+
+\justify
+\textit{Se puede demostrar también que toda matriz $A \in \mathbb{K}^{mxn}$ es equivalente a una única matriz escalón reducida por filas.}
+\end{shadedbox}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rango de una Matriz}
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN RANGO DE UNA MATRIZ}
+\justify
+\textit{Si A es una matriz, se llama rango de filas de A y se denota $r(A)$ al número de filas no nulas de cualquier matriz reducida por filas equivalente por filas a A.}
+\end{shadedbox}
+
+\justify
+\textit{\textbf{Ejemplos:}}
+
+\[\begin{matrix} 
+
+A^{3 \times 4} =
+\begin{blockarray}{cccc}
+\begin{block}{[cccc]}
+  1 & 0 & 0 & 0\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 1 & 1\\
+\end{block}
+\end{blockarray}
+
+\rightarrow
+r(A) = 3
+; \thinspace \thinspace
+
+E^{3 \times 3} =
+\begin{blockarray}{ccc}
+\begin{block}{[ccc]}
+  1 & 0 & -\frac{3}{12}\\
+  0 & 1 & \frac{9}{12}\\
+  0 & 0 & 0\\
+\end{block}
+\end{blockarray}
+
+\rightarrow
+r(E) = 2
+; \thinspace \thinspace
+\\
+
+J^{5 \times 1} =
+\begin{blockarray}{c}
+\begin{block}{[c]}
+ 1\\
+  0\\
+  0\\
+  0\\
+  0\\
+\end{block}
+\end{blockarray}
+
+\rightarrow
+r(I) = 1
+\end{matrix}
+\]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Conjunto de Soluciones de un Sistema de Ecuaciones\\ Lineales}
+\justify
+Antes de analizar la relación entre matrices y sistemas de ecuaciones es necesario recordar que un sistema de ecuaciones lineales puede tener 3 posibles soluciones las cuales son:
+\begin{itemize}
+\item[\textbf{1)}]Solución única.
+\item[\textbf{2)}]Infinitas soluciones.
+\item[\textbf{3)}]Ninguna solución.
+\end{itemize}
+
+\justify
+En secciones y ejemplos anteriores hemos aprendido que no sólo podemos expresar un sistema de ecuaciones lineales como una matriz sino que también podemos resolverla a partir de una matriz, para ello utilizamos la matriz ampliada donde ubicamos los valores del término independiente. Se muestra a continuación esta expresión:
+
+\begin{small}
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrrrcl}
+    a_{11}x_{1} &+& a_{12}x_{2} &+& \cdots &+& a_{1n}x_{n} & = & b_{1}
+	\\a_{21}x_{1} &+& a_{22}x_{2} &+& \cdots &+& a_{2n}x_{n} & = & b_{2}
+	\\ \vdots &+& \vdots &+& \ddots &+& \vdots &=& \vdots
+	\\a_{m1}x_{1} &+& a_{m2}x_{2} &+& \cdots &+& a_{mn}x_{n} & = & b_{m}
+\end{array}
+\right.
+
+\Longrightarrow
+
+A|H^{m \times (n+1)} =
+\left[ \begin{array}{cccc|c}
+ 	a_{11} & a_{12} & \cdots & a_{1n} & b_{1}\\ 
+ 	a_{21} & a_{22} & \cdots & a_{2n} & b_{2}\\
+ 	\vdots & \vdots & \ddots & \vdots & \vdots\\
+ 	a_{m1} & a_{m2} & \cdots & a_{mn} & b_{m}
+\end{array} \right]
+\end{matrix}
+\]
+\end{small}
+
+\justify
+A partir de ésto vamos a definir la siguiente propiedad:
+\pagebreak
+
+\begin{shadedbox}
+\textbf{SISTEMA DE ECUACIONES LINEALES Y MATRIZ AMPLIADA:}
+\justify
+\textit{Sea $r(A)$ el rango de la matriz $A$ y $r(A|H)$ el rango de la matriz ampliada $A|H$, entonces:}
+
+\justify
+\textbf{1)} si $r(A)=r(A|H)=n \Longrightarrow$ \textit{solución única.}\\
+\textbf{2)} si $r(A)=r(A|H)<$ número de incógnitas $\Longrightarrow$ \textit{solución infinita.}\\
+\textbf{3)} si $r(A)\not= r(A|H) \Longrightarrow$ \textit{sistema incompatible.}
+\end{shadedbox}
+
+\justify
+Veamos los siguientes ejemplos para ver los distintos casos:
+
+\justify
+\textbf{\textit{Ejemplo 1:}}
+
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 0x_{2} &+& 0x_{3} & = & 2
+	\\0x_{1} &+& 1x_{2} &+& 0x_{3} & = & 3
+	\\0x_{1} &+& 0x_{2} &+& 1x_{3} & = & 1
+\end{array}
+\right.
+
+;\thinspace\thinspace
+
+A|H=
+\left[ \begin{array}{ccc|c}
+ 	1 & 0 & 0 & 2\\
+ 	0 & 1 & 0 & 3\\
+ 	0 & 0 & 1 & 1\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\justify
+En este caso observamos que $r(A)=r(A|H)$ por lo que el sistema tiene \textit{\textbf{solución única}}.\\
+La solución de éste sistema es la siguiente: $(x_{1},x_{2},x_{3})=(2,3,1)$.
+
+\justify
+\textbf{\textit{Ejemplo 2:}}
+
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 0x_{2} &+& -3x_{3} & = & 1
+	\\0x_{1} &+& 1x_{2} &+& -2x_{3} & = & 4
+\end{array}
+\right.
+
+;\thinspace\thinspace
+
+B|H=
+\left[ \begin{array}{ccc|c}
+ 	1 & 0 & -3 & 1\\
+ 	0 & 1 & -2 & 4\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\justify
+En este caso observamos que $r(B)=r(B|H)=2<3$ (el número de incógnitas) por lo que el sistema tiene \textit{infinitas soluciones}. Nuestro sistema lo podemos reescribir como:
+
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrcl}
+    x_{1} & = & 1 &+& 3x_{3}
+	\\x_{2} & = & 4 &+& 2x_{3} 
+\end{array}
+\right.
+\end{matrix}
+\]
+
+\justify
+Podemos observar entonces que $x_{1}$ y $x_{2}$ dependen de los valores que tome $x_{3}$, esto quiere decir que si por ejemplo $x_{3}=1$ entonces $x_{1}=4$ y $x_{2}=6$. A ésto se refiere que el sistema tiene \textit{\textbf{infinitas soluciones}} ya que $x_{3}$ puede tomar infinitos valores y dar infinitos valores para $x_{1}$ y $x_{2}$.
+
+\justify
+Para dar la solución de nuestro sistema lo podemos escribir de la siguiente forma:\\
+$(x_{1},x_{2},x_{3})=(1,4,0)+x_{3}(3,2,1)$
+
+\justify
+También se suelen utilizar parámetros para expresar la solución de nuestro sistema:
+
+\justify
+si $x_{3}=t\in\mathbb{R}$ entonces: $(x_{1},x_{2},x_{3})=(1,4,0)+t(3,2,1)=(1+3t,4+2t,t)$
+
+\justify
+Esta expresión se llama \textbf{\textit{solución general del sistema}}.
+
+\justify
+A medida que t toma distintos valores se obtienen las \textit{\textbf{soluciones particulares del sistema}}. Por ejemplo:
+
+\justify
+si $t=0$, entonces: $(x_{1},x_{2},x_{3})=(1,4,0)+0(3,2,1)=(1,4,0)$\\
+si $t=1$, entonces: $(x_{1},x_{2},x_{3})=(1,4,0)+1(3,2,1)=(4,6,1)$\\
+si $t=-1$, entonces: $(x_{1},x_{2},x_{3})=(1,4,0)+(-1)(3,2,1)=(-2,2,-1)$
+\pagebreak
+
+\justify
+\textbf{\textit{Ejemplo 3:}}
+
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 0x_{2} &+& 1x_{3} & = & -3
+	\\0x_{1} &+& 1x_{2} &+& -1x_{3} & = & 1
+	\\0x_{1} &+& 0x_{2} &+& 0x_{3} & = & 2
+\end{array}
+\right.
+
+;\thinspace\thinspace
+
+C|H=
+\left[ \begin{array}{ccc|c}
+ 	1 & 0 & 1 & -3\\
+ 	0 & 1 & -1 & 1\\
+ 	0 & 0 & 0 & 2\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\justify
+En este caso observamos que $r(C)=2\not=3=r(C|H)$ el sistema es incompatible por no tener solución la tercer ecuación y el sistema \textbf{\textit{no tiene solución}}.
+
+\justify
+$0x_{1}+0x_{2}+0x_{3}=2$ no tiene solución.
+
+\justify 
+\textit{Aclaración:} Para obtener todos las soluciones de los sistemas anteriores notemos que las distintas matrices ampliadas estaban reducidas por filas.
+
+\justify
+Es muy importante aprender a expresar la solución de un conjunto ya sea esta como una solución única, una solución general, o una solución particular.
+
+\justify 
+Ahora vamos a resolver un sistema de ecuaciones y ver cuál es su solución.
+
+\justify
+\textbf{\textit{Ejemplo:}}
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 1x_{2} &+& 1x_{3} & = & 2
+	\\2x_{1} &+& -3x_{2} &+& 2x_{3} & = & 4
+	\\4x_{1} &+& -6x_{2} &+& 4x_{3} & = & 8
+\end{array}
+\right.
+
+;\thinspace\thinspace
+
+A|H=
+\left[ \begin{array}{ccc|c}
+ 	1 & 1 & 1 & 2\\
+ 	2 & -3 & 2 & 4\\
+ 	4 & -6 & 4 & 8\\ 
+\end{array} \right]
+\end{matrix}
+\]
+\justify
+\textit{Resolviendo:}
+
+\[\begin{matrix} 
+A|H=
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & 1 & 2 \\
+  2 & -3 & 2 & 4 \\
+  4 & -6 & 4 & 8 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{2} + (-2) \cdot e_{1}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & 1 & 2 \\
+  0 & -5 & 0 & 0 \\
+  4 & -6 & 4 & 8 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{3} + (-4) \cdot e_{1}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & 1 & 2 \\
+  0 & -5 & 0 & 0 \\
+  0 & -10 & 0 & 0 \\
+\end{block}
+\end{blockarray}
+
+\\
+
+\stackrel{e_{3} + (-2) \cdot e_{2}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & 1 & 2 \\
+  0 & -5 & 0 & 0 \\
+  0 & 0 & 0 & 0 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{(-\frac{1}{5}) \cdot e_{2}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & 1 & 2 \\
+  0 & 1 & 0 & 0 \\
+  0 & 0 & 0 & 0 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{1}+(-1) \cdot e_{2}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 0 & 1 & 2 \\
+  0 & 1 & 0 & 0 \\
+  0 & 0 & 0 & 0 \\
+\end{block}
+\end{blockarray}
+
+=A|H
+\end{matrix}
+\]
+
+\justify
+Entonces: $r(A)=r(A|H)=2<3$ (número de incógnitas) por lo que el sistema va a tener \textbf{\textit{infinitas soluciones}}. 
+
+\justify
+El conjunto solución es el siguiente: $(x_{1},x_{2},x_{3})=(2,0,0)+t(1,0,1)=(2+t,0,t)$.
+\pagebreak
+
+\justify
+Hemos visto que los sistemas pueden llegar a ser incompatibles y no tener solución por lo que ahora nos interesa ver que condición o condiciones debe cumplir un sistema para que si tenga solución
+
+\justify
+\textbf{\textit{Veamos el siguiente ejemplo:}}
+
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 1x_{2} &+& -2x_{3} & = & y1
+	\\-2x_{1} &+& 0x_{2} &+& 1x_{3} & = & y2
+	\\-1x_{1} &+& 1x_{2} &+& -1x_{3} & = & y3
+\end{array}
+\right.
+
+;\thinspace\thinspace
+
+A|H=
+\left[ \begin{array}{ccc|c}
+ 	1 & 1 & -2 & y1\\
+ 	-2 & 0 & 1 & y2\\
+ 	-1 & 1 & -1 & y3\\ 
+\end{array} \right]
+
+\end{matrix}
+\]
+
+\justify
+\textit{Resolviendo:}
+
+\[\begin{matrix} 
+A|H=
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & -2 & y1 \\
+  -2 & 0 & 1 & y2 \\
+  -1 & 1 & -1 & y3 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{2} + (2) \cdot e_{1}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & -2 & y1 \\
+  0 & 2 & -3 & y2+2y1 \\
+  -1 & 1 & -1 & y3 \\
+\end{block}
+\end{blockarray}
+
+\stackrel{e_{3} + (1) \cdot e_{1}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & -2 & y1 \\
+  0 & 2 & -3 & y2+2y1 \\
+  0 & 2 & -3 & y3+y1 \\
+\end{block}
+\end{blockarray}
+
+\\
+
+\stackrel{e_{3} + (-1) \cdot e_{2}}{\hbox to 40pt{\rightarrowfill}}
+
+\begin{blockarray}{cccc}
+\begin{block}{[ccc|c]}
+  1 & 1 & -2 & y1 \\
+  0 & 2 & -3 & y2+2y1 \\
+  0& 0 & 0 & y3+y1-1(y2+2y1)\\
+\end{block}
+\end{blockarray}
+=A|H
+\end{matrix}
+\]
+
+\justify
+De la última matriz obtenemos lo siguiente:
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 1x_{2} &+& -2x_{3} & = & y1
+	\\0x_{1} &+& 2x_{2} &+& -3x_{3} & = & y2+2y1
+	\\0x_{1} &+& 0x_{2} &+& 0x_{3} & = & y3+y1-1(y2+2y1)
+\end{array}
+\right.
+\end{matrix}
+\]
+
+\justify
+De la ultima ecuación obtenemos la condición que es la siguiente: $ y3+y1-1(y2+2y1)=0$. Resolviendo:\\
+$y3-y2-y1=0 \Longrightarrow y3=y1+y2$.\\
+
+\justify
+Entonces, mientras se cumpla la condición el sistema va a tener solución. Esto también se puede verificar con el rango de la matriz:
+
+\justify
+\textbf{\textit{Si se cumple la condición:}} $r(A)=r(A|H)$
+
+\justify
+\textbf{\textit{Si no se cumple la condición:}} $r(A)\not=r(A|H)$
+
+\begin{shadedbox}
+\textbf{Nota:}
+\justify
+\textit{Un sistema se dice \textbf{homogéneo} cuando todos sus términos independientes son cero, es decir:}
+
+\justify
+$H=0$. En este caso, la n-upla nula es siempre solución y se denomina \textbf{solución trivial}.
+\end{shadedbox}
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Teorema de Rouché-Frobenius}
+\begin{shadedbox}
+\textbf{TEOREMA DE ROUCHÉ-FROBENIUS}
+\justify
+\textit{Un sistema de ecuaciones lineales tiene solución, si y solo si, el rango de la matriz de coeficientes es igual al rango de la matriz ampliada.}
+\end{shadedbox}
+
+\begin{shadedbox}
+\textbf{TEOREMA}
+\justify
+\textit{Un sistema de ecuaciones lineales homogéneas, tiene soluciones distintas de la trivial, si y sólo si, el rango de matriz de coeficientes es menor que el número de incógnitas}.
+
+\justify
+\textit{\textbf{Corolario:}}
+\textit{Un sistema de ecuaciones lineales homogéneas con más incógnitas que ecuaciones, siempre admite soluciones distintas a la trivial.}
+\end{shadedbox} 
+
+\justify
+\textit{Vemos un ejemplo del último teorema:}
+\[\begin{matrix}
+\left\{
+\begin{array}{rrrrrcl}
+    1x_{1} &+& 0x_{2} &+& 1x_{3} & = & 0
+	\\0x_{1} &+& 1x_{2} &+& 2x_{3} & = & 0
+	\\0x_{1} &+& 0x_{2} &+& 0x_{3} & = & 0
+\end{array}
+\right.
+
+;\thinspace\thinspace
+
+A|H=
+\left[ \begin{array}{ccc|c}
+ 	1 & 0 & 1 & 0\\
+ 	0 & 1 & 2 & 0\\
+ 	0 & 0 & 0 & 0\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\justify
+La matriz ampliada se puede expresar como el siguiente sistema de ecuaciones lineales: 
+\[\begin{matrix}
+\left\{
+\begin{array}{rcl}
+    x_{1}&=& -x_{3}
+	\\x_{2}&=&-2x_{3}
+	\\x_{3}&=&x_{3}
+\end{array}
+\right.
+\end{matrix}
+\]
+\justify
+Y la solución general del sistema es la siguiente:
+\justify
+$(x_{1},x_{2},x_{3})=x_{3}(-1,-2,1)$, o,
+\justify
+$(x_{1},x_{2},x_{3})=t(-1,-2,0)=(-t,-2t,1)$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Operaciones con Matrices}
+\subsubsection{Suma de Matrices}
+\begin{shadedbox}
+\textbf{DEFINICIÓN DE SUMA DE MATRICES}
+\justify
+\textit{Sean $A=a_{ij}$ y $B=b_{ij}$ matrices de $\mathbb{K}^{mxn}$, entonces:}
+\begin{center}
+$A+B=(a_{ij}+b_{ij})\in \mathbb{K}^{mxn}$
+\end{center}
+\end{shadedbox} 
+
+\justify
+\textbf{\textit{Ejemplo:}}
+
+\[\begin{matrix}
+A+B=
+\left[ \begin{array}{ccc}
+ 	1 & 0 & 1\\
+ 	0 & 1 & 2\\
+ 	0 & 0 & 0\\ 
+\end{array} \right]
+
++
+\left[ \begin{array}{ccc}
+ 	1 & 0 & 1\\
+ 	-5 & -1 & 2\\
+ 	-2 & 2 & 6\\ 
+\end{array} \right]
+=
+\left[ \begin{array}{ccc}
+ 	2 & 0 & 2\\
+ 	-5 & 0 & 4\\
+ 	-2 & 2 & 6\\ 
+\end{array} \right]
+\end{matrix}
+\]
+\pagebreak
+
+\justify
+\textbf{\textit{Propiedades de suma de matrices:}}
+\justify
+Sean $A,B,C \in \mathbb{K}^{mxn}$, entonces:
+
+\begin{enumerate}
+\item[\textbf{1)}] $(A+B)+C=A+(B+C)$ \textbf{(Asociatividad)}
+\item[\textbf{2)}] $A+B=B+A$ \textbf{(Conmutatividad)}
+\item[\textbf{3)}] Existe un elemento en $K^{mxn}$ que llamamos matriz nula y denotamos \textit{"0"}, tal que \textit{A+0=A} para todo $A\in\mathbb{K}^{mxn}$.
+\item[\textbf{4)}] Para toda matriz $A=(a_{ij})\in \mathbb{K}^{mxn}$ existe una matriz opuesta que denotamos \textit{-A} tal que \textit{A+(-A)=0}. Se sabe que \textit{-A=($-a_{ij}$)}.
+\end{enumerate}
+
+\subsubsection{Producto de un Escalar por una Matriz}
+\begin{shadedbox}
+\textbf{DEFINICIÓN DE PRODUCTO DE UN ESCALAR POR UNA MATRIZ}
+\justify
+\textit{Sea $\mathbb{K}$ un cuerpo, $c\in\mathbb{K}$ y \textit{A=($a_{ij})\in\mathbb{K}^{mxn}$}}.
+\justify
+\textit{La multiplicación de la matriz \textit{A} por el escalar \textit{c} que denotamos $c\cdot A$ es una matriz en $\mathbb{K}^{mxn}$ dada por:}
+\begin{center}
+$c\cdot A=(c\cdot a_{ij})$
+\end{center}
+\end{shadedbox} 
+
+\justify
+\textbf{\textit{Ejemplo:}}\\
+
+\[\begin{matrix}
+-3\cdot A=(-3)\cdot
+\left[ \begin{array}{ccc}
+ 	1 & 0 & 1\\
+ 	-9 & 3 & 0\\
+ 	2 & -1 & 4\\ 
+\end{array} \right]
+=
+\left[ \begin{array}{ccc}
+ 	-3 & 0 & -3\\
+ 	27 & -9 & 0\\
+ 	-6 & 3 & -12\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\justify
+\textbf{\textit{Propiedades de Producto de un Escalar por una Matriz}}
+\justify
+Sean $A,B \in \mathbb{K}^{mxn}$ y $\alpha,\beta\in\mathbb{K}$, entonces:
+
+\begin{enumerate}
+\item[\textbf{1)}] $\alpha(A+B)=\alpha A+\alpha B$ \textbf{(Distributiva sobre suma de matrices)}
+\item[\textbf{2)}] $(\alpha+\beta)A=\alpha A+\beta A$ \textbf{(Distributiva sobre suma de escalares)}
+\item[\textbf{3)}] $(\alpha\cdot\beta)A=\alpha (\beta\cdot A)$
+\item[\textbf{4)}] $1\cdot A=A$
+\end{enumerate}
+\pagebreak
+
+\subsection{Combinación Lineal de Matrices}
+\begin{shadedbox}
+\textbf{DEFINICIÓN COMBINACIÓN LINEAL DE MATRICES}
+\justify
+\textit{Sean $A,B,\cdots,Z \in \mathbb{K}^{mxn}$, los escalares, $\alpha,\beta,\cdots,\gamma \in\mathbb{R}$.}
+\justify
+\textit{Definiendo los productos: $\alpha\cdot A,\beta\cdot B,\cdots,\gamma\cdot C\in\mathbb{K}^{mxn}$, sumando estas ultimas matrices se obtiene:}
+\begin{center}
+$X=\alpha\cdot A+\beta\cdot B+\cdots+\gamma\cdot C$
+\end{center}
+\justify
+\textit{Se dice que la matriz X	es una \textbf{combinación lineal} de las matrices $A,B,\cdots,C$ según los escalares $\alpha,\beta,\cdots,\gamma$.}
+\end{shadedbox} 
+
+\justify
+\textbf{\textit{Ejemplo:}}
+
+\justify
+Calcular la matriz C a partir de las matrices A, B y los escalares 3, -2 respectivamente.
+\[\begin{matrix}
+A=
+\left[ \begin{array}{ccc}
+ 	1 & 0 & 1\\
+ 	-9 & 3 & 0\\
+ 	2 & -1 & 4\\ 
+\end{array} \right]
+; \thinspace\thinspace
+B=
+\left[ \begin{array}{ccc}
+ 	-3 & 0 & -3\\
+ 	27 & -9 & 0\\
+ 	-6 & 3 & -12\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\[\begin{matrix}
+C= (3)\cdot
+\left[ \begin{array}{ccc}
+ 	1 & 0 & 1\\
+ 	-9 & 3 & 0\\
+ 	2 & -1 & 4\\ 
+\end{array} \right]
++
+(-2)\cdot
+\left[ \begin{array}{ccc}
+ 	-3 & 0 & -3\\
+ 	27 & -9 & 0\\
+ 	-6 & 3 & -12\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\[\begin{matrix}
+C=
+\left[ \begin{array}{ccc}
+ 	3 & 0 & 3\\
+ 	-27 & 9 & 0\\
+ 	6 & -3 & 12\\ 
+\end{array} \right]
++
+\left[ \begin{array}{ccc}
+ 	6 & 0 & 6\\
+ 	-54 & 18 & 0\\
+ 	12 & -6 & 24\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\[\begin{matrix}
+C=
+\left[ \begin{array}{ccc}
+ 	9 & 0 & 9\\
+ 	-81 & 27 & 0\\
+ 	18 & -9 & 36\\ 
+\end{array} \right]
+\end{matrix}
+\]
+%%%\begin{comment}
+\subsection{Multiplicación de Matrices}
+\justify
+Una operación importante que podemos realizar con las matrices es la \textbf{multiplicación} entre ellas. Ésta tiene una forma particular de realizarse y la vamos a explicar a partir de este ejemplo:
+\[\begin{matrix}
+A=
+\left[ \begin{array}{ccc}
+ 	1 & -2 & 3\\
+ 	1 & 0 & -1\\ 
+\end{array} \right]
+; \thinspace\thinspace
+B=
+\left[ \begin{array}{c}
+ 	4\\
+ 	5\\
+ 	6\\ 
+\end{array} \right]
+\end{matrix}
+\]
+
+\[\begin{matrix}
+A\cdot B=
+\left[ \begin{array}{ccc}
+ 	1 & -2 & 3\\
+ 	1 & 0 & -1\\ 
+\end{array} \right]
+\cdot
+\left[ \begin{array}{c}
+ 	4\\
+ 	5\\
+ 	6\\ 
+\end{array} \right]
+(2.5)
+\end{matrix}
+\]
+
+\[\begin{matrix}
+C=
+\left[ \begin{array}{ccccc}
+ 	1\cdot 4 &-& 2\cdot 5 &+& 3\cdot 6\\
+ 	1\cdot 4 &+& 0\cdot 5 &-& 1\cdot 6\\ 
+\end{array} \right] 
+(2.6)
+\end{matrix}
+\]
+
+\[\begin{matrix}
+C=
+\left[ \begin{array}{c}
+ 	12\\
+ 	-2\\
+\end{array} \right]
+\end{matrix}
+\]
+
+\justify
+Lo \textbf{\textit{primero}} que podemos observar es que en $(2.5)$ tenemos dos matrices $A\in\mathbb{K}^{2x3}$ y $B\in\mathbb{K}^{3x1}$ las cuales van a generar la matriz $C = A\cdot B$.
+
+\pagebreak
+
+\justify
+Lo \textbf{\textit{segundo}} que podemos observar es que en $(2.6)$ tenemos una sola matriz $C\in\mathbb{K}^{2x1}$ que es resultado de multiplicar los elementos de A y los elementos de B uno por uno pero de la siguiente manera: $c_{11} = a_{11} \cdot b_{11} + a_{12} \cdot b_{21} + a_{13} \cdot b_{31}$.
+
+\justify
+De modo general, \textit{el elemento $c_{ij}$ se obtiene multiplicando, elemento a elemento y sumando, la fila i de A por la columna j de B.}
+
+\justify
+El segundo elemento de C se genera de la misma forma solo que utilizando la segunda fila de A contra la primera columna de B.
+
+\justify
+\textit{En este ejemplo:} $ 12 =1 \cdot 4 + -2 \cdot 5 + 3 \cdot 6$, donde 12 es el elemento de la primer fila y primer columna de C. 
+\justify
+Podemos pensar que para resolver la operación recorremos la matriz A de forma horizontal y la matriz B de forma vertical solo para el caso $A \cdot B$.
+
+\justify
+Lo \textbf{\textit{tercero}} que podemos observar es que para que podamos multiplicar un elemento de A y un elemento de B las filas y columnas correspondientes tienen que tener un tamaño en particular. La regla de tamaños de las matrices la mostramos con el siguiente ejemplo:
+
+\centering
+\includegraphics[width=0.6\textwidth]{mul-matrices-2.png}\par\vspace{0.1cm}
+
+\justify
+Es necesario entonces que la matriz $A$ tenga el mismo número de columnas que el número de filas que tiene la matriz $B$. 
+\\
+Finalmente, la matriz final $C$ va a tener la misma cantidad de filas que $A$ y la misma cantidad de columnas que $B$.
+
+\justify
+\textit{\underline{Observación:}} a partir del primer ejemplo podemos observar que la multiplicación $B \cdot A$ no es posible por la regla que acabamos de mencionar. \textit{¡Verificalo para ver si la entendiste!}
+
+\justify
+\textit{\underline{Observación 2:}} las filas de $C$ son una combinación lineal entre las filas de $A$ y las filas de $B$.
+
+\begin{shadedbox}
+\textbf{DEFINICIÓN MULTIPLICACIÓN DE MATRICES}
+\justify
+\textit{Sean $\mathbb{K}$ un cuerpo, $m, n$ y $p$ enteros positivos, $A\in\mathbb{K}^{mxn}$ y $B\in\mathbb{K}^{nxp}$. Llamaremos \textbf{multiplicación de $A$ por $B$}, a la matriz $C\in\mathbb{K}^{mxp}$ dada por:}
+\begin{center}
+$c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots + a_{in}b_{nj}$ = $\sum_{k=1}^{n}a_{ik}b_{kj}$
+\end{center}
+\end{shadedbox} 
+
+\subsubsection{Propiedades}
+\justify
+Las matrices equivalentes por filas cumplen las siguientes propiedades:
+
+\begin{enumerate}
+\item \textbf{Reflexividad:} $A \thicksim A$ 
+\item \textbf{Simetría:} si $B \thicksim A$, entonces: $A \thicksim B$
+\item \textbf{Transitividad:} si $A \thicksim B$ y $B \thicksim C$, entonces: $A \thicksim C$
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Bibliografía}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Introducción a la Matemática. \textbf{Gigena, Azpilicueta, Gómez, Joaquín, Molina.} 2009.
+Universitas. Editorial Científica Universitaria. Córdoba. 
+\item Guía de Trabajos Prácticos. \textbf{Rojas, Nadina y Roitman Claudia.} 2020. Ed. CEICIN.
+\item Precálculo 6e - Matematicas para el cálculo. \textbf{Stewart, Redlin, Watson.} 2012. CENGAGE Learning.
+\item Conocimientos básicos de Matemática. \textbf{Allueva, Alejandre, González}. Matemática Aplicada - Universidad de Zaragoza.
+\end{itemize}
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
